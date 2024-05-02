@@ -1,0 +1,67 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Projects\\Dev\\AuctionApi\\AuctionApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{82136F9D-7A7B-4BDD-81B7-3D1F19049089}|..\\Api\\Api.csproj|c:\\projects\\dev\\auctionapi\\api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82136F9D-7A7B-4BDD-81B7-3D1F19049089}|..\\Api\\Api.csproj|c:\\projects\\dev\\auctionapi\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82136F9D-7A7B-4BDD-81B7-3D1F19049089}|..\\Api\\Api.csproj|c:\\projects\\dev\\auctionapi\\api\\controllers\\auction\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Projects\\Dev\\AuctionApi\\Api\\appsettings.json",
+              "RelativeDocumentMoniker": "..\\Api\\appsettings.json",
+              "ToolTip": "C:\\Projects\\Dev\\AuctionApi\\Api\\appsettings.json",
+              "RelativeToolTip": "..\\Api\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-05-01T21:14:12.513Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Projects\\Dev\\AuctionApi\\Api\\Program.cs",
+              "RelativeDocumentMoniker": "..\\Api\\Program.cs",
+              "ToolTip": "C:\\Projects\\Dev\\AuctionApi\\Api\\Program.cs",
+              "RelativeToolTip": "..\\Api\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-01T21:15:48.857Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\Projects\\Dev\\AuctionApi\\Api\\Controllers\\Auction\\ProductController.cs",
+              "RelativeDocumentMoniker": "..\\Api\\Controllers\\Auction\\ProductController.cs",
+              "ToolTip": "C:\\Projects\\Dev\\AuctionApi\\Api\\Controllers\\Auction\\ProductController.cs",
+              "RelativeToolTip": "..\\Api\\Controllers\\Auction\\ProductController.cs",
+              "ViewState": "AQIAADwAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T02:53:41.31Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

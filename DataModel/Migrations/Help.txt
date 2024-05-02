@@ -1,0 +1,4 @@
+1. How to add migration pmc:
+add-migration initial_15-04-24v2 -context auctiondbcontext -outputdir Migrations/SqliteMigrations
+2. Update DB
+update-database initial_15-04-24v2 
