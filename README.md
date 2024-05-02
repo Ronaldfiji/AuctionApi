@@ -6,4 +6,4 @@
 
 ### App Info
 
-This is .Net Api build using c# on .Net 6 with integrated JWT security. API provides online shop, payment system with Windcave, Order Management and Some additional out of scope School Management system.
+This is .Net Api build using c# on .Net 6 with integrated JWT security. API provides online products, payment system with Windcave, Order Management system.
