@@ -1019,3 +1019,15 @@ C:\Projects\Dev\AuctionApi\Api\obj\Debug\net8.0\refint\Api.dll
 C:\Projects\Dev\AuctionApi\Api\obj\Debug\net8.0\Api.pdb
 C:\Projects\Dev\AuctionApi\Api\obj\Debug\net8.0\Api.genruntimeconfig.cache
 C:\Projects\Dev\AuctionApi\Api\obj\Debug\net8.0\ref\Api.dll
+C:\Projects\Dev\AuctionApi\Api\obj\Debug\net8.0\Api.sourcelink.json
+C:\Projects\Dev\AuctionApi\Api\bin\Debug\net8.0\Resource\Static\Profile\8899663\8899663SoccerStart1.webp
+C:\Projects\Dev\AuctionApi\Api\bin\Debug\net8.0\Resource\Static\Profile\5589699\5589699JamesK.png
+C:\Projects\Dev\AuctionApi\Api\bin\Debug\net8.0\Resource\Static\Organisation\4693253669\4693253669RCManu-Site-Logo.svg
+C:\Projects\Dev\AuctionApi\Api\bin\Debug\net8.0\Resource\Static\Organisation\48223600258\48223600258FijiWaterLogo.png
+C:\Projects\Dev\AuctionApi\Api\bin\Debug\net8.0\Resource\Static\Organisation\5823933664\5823933664NewWorldLogo.png
+C:\Projects\Dev\AuctionApi\Api\bin\Debug\net8.0\Resource\Static\Organisation\652369899\652369899PunjasLogo.png
+C:\Projects\Dev\AuctionApi\Api\bin\Debug\net8.0\Resource\Static\Organisation\69885002533\69885002533Mango_png.png
+C:\Projects\Dev\AuctionApi\Api\bin\Debug\net8.0\Resource\Static\Organisation\98563256952\98563256952FijiWaterLogo.png
+C:\Projects\Dev\AuctionApi\Api\bin\Debug\net8.0\Resource\Static\Organisation\5823933664\5823933664NewWorldLogo_2.png
+C:\Projects\Dev\AuctionApi\Api\bin\Debug\net8.0\Resource\Static\Organisation\69558002536\69558002536VinodPatelLogo.png
+C:\Projects\Dev\AuctionApi\Api\bin\Debug\net8.0\Resource\Static\Organisation\52639445263\52639445263USPLogo.png

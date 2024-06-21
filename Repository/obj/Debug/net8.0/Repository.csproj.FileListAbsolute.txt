@@ -66,3 +66,4 @@ C:\Projects\Dev\AuctionApi\Repository\obj\Debug\net8.0\Repository.dll
 C:\Projects\Dev\AuctionApi\Repository\obj\Debug\net8.0\refint\Repository.dll
 C:\Projects\Dev\AuctionApi\Repository\obj\Debug\net8.0\Repository.pdb
 C:\Projects\Dev\AuctionApi\Repository\obj\Debug\net8.0\ref\Repository.dll
+C:\Projects\Dev\AuctionApi\Repository\obj\Debug\net8.0\Repository.sourcelink.json

@@ -2,6 +2,7 @@
 using DataModel.Entity;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration.UserSecrets;
 using Microsoft.Extensions.Logging;
 using Repository.Config;
 using Repository.Contracts;
@@ -346,7 +347,7 @@ namespace Repository.Repository
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex, "{Repo} UpdateUserAsync method error",
+                _logger.LogError(ex, "{Repo} UpdateUserWithRoleAsync method error",
                   typeof(UserRepository));
                 throw new Exception($"Failed to update {nameof(UserToEditDto)} in database " +
                     $": {ex.Message}");
@@ -424,26 +425,41 @@ namespace Repository.Repository
 
         }
 
-        public async Task<ServiceResponse<UserDto>> AssignRole(User user, List<RoleToAssignDto> rolesToAss)
+        public async Task<ServiceResponse<UserDto>> AssignRole(int userId, List<UserRoleDto> userRoleList)
         {
             try
             {
                 var res = new ServiceResponse<UserDto>();
 
-                //user.UserRoles.Clear();
-                foreach (var role in rolesToAss)
+                var user = await _context.User
+                                           .Include(u => u.UserType)
+                                           .Include(u => u.UserRoles)
+                                           .Where(u => u.ID == userId)
+                                           .FirstOrDefaultAsync();
+                if (user == null)
                 {
-
-                    if (role != null && role.RoleId > 0)
-                        user.UserRoles.Add(new UserRole
-                        {
-                            RoleId = role.RoleId,
-                            CreatedBy = role.CreatedBy,
-                            UpdatedBy = role.UpdatedBy,
-                            IPAddress = role.IPAddress,
-                        });
+                    res.Data = new UserDto();
+                    res.StatusCode = 404;
+                    return res;
                 }
-                var updated = await UpdateAsync(user);
+
+                if (userRoleList.Count > 0)
+                {
+                    user.UserRoles.Clear();
+
+                    foreach (var role in userRoleList)
+                    {
+                        if (role != null && role.RoleId > 0)
+                            user?.UserRoles.Add(new UserRole
+                            {
+                                RoleId = role.RoleId,
+                                CreatedBy = role.CreatedBy,
+                                UpdatedBy = role.UpdatedBy,
+                                IPAddress = role.IPAddress,
+                            });
+                    }
+                }
+                var updated = await UpdateAsync(user ?? new User());
                 if (updated != null)
                 {                
                     res.Data = updated.ConvertToDto();
@@ -454,8 +470,9 @@ namespace Repository.Repository
             }
             catch (Exception ex)
             {
+
                 _logger.LogError(ex, "{Repo} AssignRole() method error", typeof(UserRepository));             
-                throw new Exception($"Failed to assign role to user {user.ID}. Review error logs. " + $": {ex.Message}");
+                throw new Exception($"Failed to assign role to user {userId}. Review error logs. " + $": {ex.Message}");
                 
             }
 

@@ -9,7 +9,31 @@
       "AbsoluteMoniker": "D:0:0:{82136F9D-7A7B-4BDD-81B7-3D1F19049089}|..\\Api\\Api.csproj|c:\\projects\\dev\\auctionapi\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{82136F9D-7A7B-4BDD-81B7-3D1F19049089}|..\\Api\\Api.csproj|c:\\projects\\dev\\auctionapi\\api\\controllers\\auction\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{74F93926-826A-459E-968F-A74132BD3372}|..\\Repository\\Repository.csproj|c:\\projects\\dev\\auctionapi\\repository\\repository\\jobs\\jobpostrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74F93926-826A-459E-968F-A74132BD3372}|..\\Repository\\Repository.csproj|c:\\projects\\dev\\auctionapi\\repository\\extention\\reposearchextention.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82136F9D-7A7B-4BDD-81B7-3D1F19049089}|..\\Api\\Api.csproj|c:\\projects\\dev\\auctionapi\\api\\controllers\\jobpost\\jobpostcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1D63634-2B62-4271-9BBA-DD1ADF7E6634}|..\\DataModel\\DataModel.csproj|c:\\projects\\dev\\auctionapi\\datamodel\\entity\\jobs\\jobpost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D85FD9B5-A6AE-4DD9-A5CD-A688CCE68B50}|..\\SharedModel\\SharedModel.csproj|c:\\projects\\dev\\auctionapi\\sharedmodel\\jobsdto\\jobpostdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82136F9D-7A7B-4BDD-81B7-3D1F19049089}|..\\Api\\Api.csproj|c:\\projects\\dev\\auctionapi\\api\\controllers\\jobpost\\organisationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74F93926-826A-459E-968F-A74132BD3372}|..\\Repository\\Repository.csproj|c:\\projects\\dev\\auctionapi\\repository\\repository\\jobs\\contracts\\ijobpostrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D85FD9B5-A6AE-4DD9-A5CD-A688CCE68B50}|..\\SharedModel\\SharedModel.csproj|c:\\projects\\dev\\auctionapi\\sharedmodel\\jobsdto\\organisationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1D63634-2B62-4271-9BBA-DD1ADF7E6634}|..\\DataModel\\DataModel.csproj|c:\\projects\\dev\\auctionapi\\datamodel\\entity\\jobs\\organisation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -29,10 +53,118 @@
               "RelativeDocumentMoniker": "..\\Api\\appsettings.json",
               "ToolTip": "C:\\Projects\\Dev\\AuctionApi\\Api\\appsettings.json",
               "RelativeToolTip": "..\\Api\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAGAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABcAAAAGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-05-01T21:14:12.513Z",
+              "WhenOpened": "2024-06-21T01:03:40.65Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "JobPostDto.cs",
+              "DocumentMoniker": "C:\\Projects\\Dev\\AuctionApi\\SharedModel\\JobsDto\\JobPostDto.cs",
+              "RelativeDocumentMoniker": "..\\SharedModel\\JobsDto\\JobPostDto.cs",
+              "ToolTip": "C:\\Projects\\Dev\\AuctionApi\\SharedModel\\JobsDto\\JobPostDto.cs",
+              "RelativeToolTip": "..\\SharedModel\\JobsDto\\JobPostDto.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAABoAAAB5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-13T04:09:14.562Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "JobPost.cs",
+              "DocumentMoniker": "C:\\Projects\\Dev\\AuctionApi\\DataModel\\Entity\\Jobs\\JobPost.cs",
+              "RelativeDocumentMoniker": "..\\DataModel\\Entity\\Jobs\\JobPost.cs",
+              "ToolTip": "C:\\Projects\\Dev\\AuctionApi\\DataModel\\Entity\\Jobs\\JobPost.cs",
+              "RelativeToolTip": "..\\DataModel\\Entity\\Jobs\\JobPost.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAABkAAAB5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-13T04:08:50.601Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "JobPostController.cs",
+              "DocumentMoniker": "C:\\Projects\\Dev\\AuctionApi\\Api\\Controllers\\JobPost\\JobPostController.cs",
+              "RelativeDocumentMoniker": "..\\Api\\Controllers\\JobPost\\JobPostController.cs",
+              "ToolTip": "C:\\Projects\\Dev\\AuctionApi\\Api\\Controllers\\JobPost\\JobPostController.cs",
+              "RelativeToolTip": "..\\Api\\Controllers\\JobPost\\JobPostController.cs",
+              "ViewState": "AQIAAE8AAAAAAAAAAAAgwFQAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-25T04:40:29.451Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RepoSearchExtention.cs",
+              "DocumentMoniker": "C:\\Projects\\Dev\\AuctionApi\\Repository\\Extention\\RepoSearchExtention.cs",
+              "RelativeDocumentMoniker": "..\\Repository\\Extention\\RepoSearchExtention.cs",
+              "ToolTip": "C:\\Projects\\Dev\\AuctionApi\\Repository\\Extention\\RepoSearchExtention.cs",
+              "RelativeToolTip": "..\\Repository\\Extention\\RepoSearchExtention.cs",
+              "ViewState": "AQIAANwAAAAAAAAAAAAgwLwAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-25T02:06:40.265Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IJobPostRepository.cs",
+              "DocumentMoniker": "C:\\Projects\\Dev\\AuctionApi\\Repository\\Repository\\Jobs\\Contracts\\IJobPostRepository.cs",
+              "RelativeDocumentMoniker": "..\\Repository\\Repository\\Jobs\\Contracts\\IJobPostRepository.cs",
+              "ToolTip": "C:\\Projects\\Dev\\AuctionApi\\Repository\\Repository\\Jobs\\Contracts\\IJobPostRepository.cs",
+              "RelativeToolTip": "..\\Repository\\Repository\\Jobs\\Contracts\\IJobPostRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T22:29:31.499Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "JobPostRepository.cs",
+              "DocumentMoniker": "C:\\Projects\\Dev\\AuctionApi\\Repository\\Repository\\Jobs\\JobPostRepository.cs",
+              "RelativeDocumentMoniker": "..\\Repository\\Repository\\Jobs\\JobPostRepository.cs",
+              "ToolTip": "C:\\Projects\\Dev\\AuctionApi\\Repository\\Repository\\Jobs\\JobPostRepository.cs",
+              "RelativeToolTip": "..\\Repository\\Repository\\Jobs\\JobPostRepository.cs",
+              "ViewState": "AQIAAE4AAAAAAAAAAAAAAFsAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T22:28:23.287Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "OrganisationController.cs",
+              "DocumentMoniker": "C:\\Projects\\Dev\\AuctionApi\\Api\\Controllers\\JobPost\\OrganisationController.cs",
+              "RelativeDocumentMoniker": "..\\Api\\Controllers\\JobPost\\OrganisationController.cs",
+              "ToolTip": "C:\\Projects\\Dev\\AuctionApi\\Api\\Controllers\\JobPost\\OrganisationController.cs",
+              "RelativeToolTip": "..\\Api\\Controllers\\JobPost\\OrganisationController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAGwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T00:09:45.574Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "OrganisationDto.cs",
+              "DocumentMoniker": "C:\\Projects\\Dev\\AuctionApi\\SharedModel\\JobsDto\\OrganisationDto.cs",
+              "RelativeDocumentMoniker": "..\\SharedModel\\JobsDto\\OrganisationDto.cs",
+              "ToolTip": "C:\\Projects\\Dev\\AuctionApi\\SharedModel\\JobsDto\\OrganisationDto.cs",
+              "RelativeToolTip": "..\\SharedModel\\JobsDto\\OrganisationDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-23T23:58:47.842Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Organisation.cs",
+              "DocumentMoniker": "C:\\Projects\\Dev\\AuctionApi\\DataModel\\Entity\\Jobs\\Organisation.cs",
+              "RelativeDocumentMoniker": "..\\DataModel\\Entity\\Jobs\\Organisation.cs",
+              "ToolTip": "C:\\Projects\\Dev\\AuctionApi\\DataModel\\Entity\\Jobs\\Organisation.cs",
+              "RelativeToolTip": "..\\DataModel\\Entity\\Jobs\\Organisation.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABQAAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-23T03:21:22.818Z"
             },
             {
               "$type": "Document",
@@ -42,22 +174,10 @@
               "RelativeDocumentMoniker": "..\\Api\\Program.cs",
               "ToolTip": "C:\\Projects\\Dev\\AuctionApi\\Api\\Program.cs",
               "RelativeToolTip": "..\\Api\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAwAAAA",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAACUAAAA5AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-01T21:15:48.857Z",
+              "WhenOpened": "2024-05-14T06:10:09.058Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ProductController.cs",
-              "DocumentMoniker": "C:\\Projects\\Dev\\AuctionApi\\Api\\Controllers\\Auction\\ProductController.cs",
-              "RelativeDocumentMoniker": "..\\Api\\Controllers\\Auction\\ProductController.cs",
-              "ToolTip": "C:\\Projects\\Dev\\AuctionApi\\Api\\Controllers\\Auction\\ProductController.cs",
-              "RelativeToolTip": "..\\Api\\Controllers\\Auction\\ProductController.cs",
-              "ViewState": "AQIAADwAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-28T02:53:41.31Z"
             }
           ]
         }

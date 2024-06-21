@@ -40,8 +40,9 @@ namespace SharedModel.Dtos
 
     }
 
-    public class RoleToAssignDto
+    public class UserRoleDto
     {
+        public int UserId { get; set; }
         public int RoleId { get; set; }
         public string? CreatedBy { get; set; } = string.Empty;
         public string? UpdatedBy { get; set; } = string.Empty;

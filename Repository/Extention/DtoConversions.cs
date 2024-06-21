@@ -159,5 +159,36 @@ namespace Repository.Extention
             }).ToList();
 
         }
+
+        public static RoleDto ConvertToDto(this Role role)
+        {
+            return new RoleDto
+            {
+                Id = role.ID,
+                Name = role.Name,
+                Description = role.Description,
+                CreatedDate = role.CreatedDate,
+                CreatedBy = role.CreatedBy,
+                UpdatedBy = role.UpdatedBy,
+                IPAddress = role.IPAddress,
+            };
+        }
+
+        public static IEnumerable<RoleDto> ConvertToDto(this IEnumerable<Role> roles)
+        {
+            return (
+            from role in roles
+            select new RoleDto
+            {
+                Id = role.ID,
+                Name = role.Name,
+                Description = role.Description,
+                CreatedDate = role.CreatedDate,
+                CreatedBy = role.CreatedBy,
+                UpdatedBy = role.UpdatedBy,
+                IPAddress = role.IPAddress
+            }).ToList();
+
+        }
     }
 }

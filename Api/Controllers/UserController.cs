@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Repository.Contracts;
 using SharedModel.Dtos;
+using System.Data;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -272,31 +273,27 @@ namespace Api.Controllers
 
         }
 
-        //PATCH: UserController/AssignRole{int id, UserToUpdateDto}
+        //PATCH: UserController/AssignRole{int id, roleToAssignDto}
         [Authorize(Policy = "UserRoleManagePermission")]
+        //[Authorize(Roles = "Manager")]
         [HttpPatch("AssignRole/{id:int}")]
-        public async Task<ActionResult> AssignRole(int id, [FromBody] List<RoleToAssignDto> roleToAssignDtos)
+        public async Task<ActionResult> AssignRole(int id, [FromBody] List<UserRoleDto> roleList)
         {
             try
             {
-
-                if (roleToAssignDtos == null || !ModelState.IsValid || roleToAssignDtos.Count == 0)
+                if (roleList == null || !ModelState.IsValid || roleList.Count == 0)
                 {
-                    return BadRequest($"{nameof(RoleToAssignDto)} cannot be null or empty !");
+                    return BadRequest($"{nameof(RoleToAddEditDto)} cannot be null or empty !");
                 }
 
-                var user = await userRepository.Get(id);
-                if (user == null)
-                {
-                    return NotFound();
-                }
-
+                if (id != roleList.First().UserId)
+                    return BadRequest("Profile ID mismatch");
                 /* Uncomment below codes after adding roles repo ... */
                 var allRoles = await roleRepository.GetAll();
 
-                foreach (var role in roleToAssignDtos)
+                foreach (var role in roleList)
                 {
-                    var roleExist = allRoles.Any(r => r.ID == role.RoleId);
+                    var roleExist = allRoles.Any(r => r.Id == role.RoleId);
                     if (!roleExist)
                     {
                         ModelState.AddModelError("Error", $"Role with code {role.RoleId} may not exist  in database !");
@@ -305,9 +302,13 @@ namespace Api.Controllers
                     if (Request.HttpContext.Connection.RemoteIpAddress?.ToString() != null)
                         role.IPAddress = Request.HttpContext.Connection.RemoteIpAddress.ToString();
                 }
-                var res = await userRepository.AssignRole(user, roleToAssignDtos);
+                var res = await userRepository.AssignRole(id, roleList);
 
-                if (res.StatusCode == 200)
+                if (res.StatusCode == 404)
+                {
+                    return NotFound("User not found !");
+                }
+                    if (res.StatusCode == 200)
                 {
                     return Ok(res?.Data);
 
@@ -317,7 +318,7 @@ namespace Api.Controllers
             }
             catch (Exception ex)
             {
-                if (ex.Message.Contains("Violation of PRIMARY KEY constraint"))
+                if (ex.Message.Contains("Violation of PRIMARY KEY constraint") || ex.Message.Contains("UNIQUE constraint failed"))
                 {
                     return BadRequest(ex.Message);
                 }

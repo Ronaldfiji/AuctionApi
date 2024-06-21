@@ -54,3 +54,4 @@ C:\Projects\Dev\AuctionApi\DataModel\obj\Debug\net8.0\refint\DataModel.dll
 C:\Projects\Dev\AuctionApi\DataModel\obj\Debug\net8.0\DataModel.pdb
 C:\Projects\Dev\AuctionApi\DataModel\obj\Debug\net8.0\DataModel.genruntimeconfig.cache
 C:\Projects\Dev\AuctionApi\DataModel\obj\Debug\net8.0\ref\DataModel.dll
+C:\Projects\Dev\AuctionApi\DataModel\obj\Debug\net8.0\DataModel.sourcelink.json

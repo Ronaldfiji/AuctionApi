@@ -1,8 +1,10 @@
 ﻿using AutoMapper;
 using DataModel.Entity;
 using DataModel.Entity.AuctionEntity;
+using DataModel.Entity.Jobs;
 using SharedModel.AutionsDto;
 using SharedModel.Dtos;
+using SharedModel.JobsDto;
 
 
 namespace Repository.Extention
@@ -17,6 +19,8 @@ namespace Repository.Extention
             CreateMap<Product, ProductDto>().ReverseMap();
             CreateMap<ProductPictures,ProductPicturesDto>().ReverseMap();
             CreateMap<ItemCondition, ItemConditionDto>().ReverseMap();
+            CreateMap<Organisation, OrganisationDto>().ReverseMap();
+            CreateMap<JobPost, JobPostDto>().ReverseMap();
             //CreateMap<CustomerDTO, Customer>()
             //  .ForMember(dest => dest.Id, opt => opt.Ignore());
 

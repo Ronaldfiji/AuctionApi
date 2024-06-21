@@ -16,6 +16,6 @@ namespace Repository.Contracts
         Task<UserDto> UpdateUserWithRoles(int id, UserToEditDto userToEditDto);
         Task<UserDto> DeleteUser(int id);
         Task<UserDto?> GetUserByEmail(string email);
-        Task<ServiceResponse<UserDto>> AssignRole(User user, List<RoleToAssignDto> rolesToAss);
+        Task<ServiceResponse<UserDto>> AssignRole(int userId, List<UserRoleDto> userRoleList);
     }
 }

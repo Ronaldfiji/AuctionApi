@@ -16,6 +16,8 @@ using Repository.Service;
 using System.Text;
 using Repository.Repository.Contracts;
 using PayApi.Extentions.Policy;
+using Repository.Repository.Jobs.Contracts;
+using Repository.Repository.Jobs;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -113,6 +115,13 @@ builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
 builder.Services.AddScoped<IItemConditionRepository, ItemConditionRepository>();
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
 builder.Services.AddScoped<IAuctionDwhRepository, AuctionDwhRepository>();
+#endregion
+
+
+// Jobs Repository DI
+#region Repositories
+builder.Services.AddScoped<IOrganisationRepository, OrganisationRepository>();
+builder.Services.AddScoped<IJobPostRepository, JobPostRepository>();
 #endregion
 
 // add authorization policy

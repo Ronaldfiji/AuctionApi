@@ -2,6 +2,7 @@
 using SharedModel.Dtos;
 using Microsoft.IdentityModel.Tokens;
 using DataModel.Entity.AuctionEntity;
+using DataModel.Entity.Jobs;
 
 
 namespace Repository.Extention
@@ -183,6 +184,66 @@ namespace Repository.Extention
                 }
             }
             return products;
+        }
+
+        public static IQueryable<JobPost> SearchJobPost(this IQueryable<JobPost> jobPosts, PagingRequestDto pagedRequestDto)
+        {
+            if (pagedRequestDto.FilterList.Count == 0)
+            {
+                return jobPosts;
+            }
+
+            foreach (var keyValue in pagedRequestDto.FilterList)
+            {
+                try
+                {
+                    var columnName = keyValue.Key;
+                    var columnValue = keyValue.Value;
+                    if (columnName.IsNullOrEmpty() || columnValue.IsNullOrEmpty()) return jobPosts;
+
+                    if (columnName.ToLower() == "jobtitle")
+                    {
+                        jobPosts= jobPosts.Where(d => d.JobTitle.ToLower().Contains(columnValue.ToLower()));
+                    }
+                    if (columnName.ToLower() == "category")
+                    {
+                        jobPosts = jobPosts.Where(d => d.Category.ToLower().Contains(columnValue.ToLower()));
+                    }
+                    if (columnName.ToLower() == "city")
+                    {
+                        jobPosts = jobPosts.Where(d => d.City.ToLower().Contains(columnValue.ToLower()));
+                    }
+                    if (columnName.ToLower() == "isactive")
+                    {
+                        jobPosts = jobPosts.Where(d => d.IsActived);
+                    }
+                    if (columnName.ToLower() == "description")
+                    {
+                        jobPosts = jobPosts.Where(d => d.Description.ToLower().Contains(columnValue.ToLower()));
+                    }
+                    if (columnName.ToLower() == "organisation")
+                    {
+                        jobPosts = jobPosts.Where(d => d.OrganisationID == int.Parse(columnValue.ToLower()));
+                    }
+                    if (columnName.ToLower() == "createddate")
+                    {
+                        DateTime createdDate = DateTime.Parse(columnValue); // This format adds flexibility to search.
+                        jobPosts = jobPosts.Where(d => d.CreatedDate >= createdDate.Date &&
+                        d.CreatedDate <= createdDate.AddDays(1).Date);
+                    }
+                    if (columnName.ToLower() == "closingdate")
+                    {
+                        DateTime closingDate = DateTime.Parse(columnValue); // This format adds flexibility to search.
+                        jobPosts = jobPosts.Where(d => d.ClosingDate >= closingDate.Date &&
+                        d.ClosingDate <= closingDate.AddDays(1).Date);
+                    }
+                }
+                catch (Exception e)
+                {
+                    throw new Exception("Failed to extract table filter data from api ." + e);
+                }
+            }
+            return jobPosts;
         }
 
     }

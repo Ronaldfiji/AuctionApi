@@ -42,3 +42,4 @@ C:\Projects\Dev\AuctionApi\SharedModel\obj\Debug\net8.0\SharedModel.dll
 C:\Projects\Dev\AuctionApi\SharedModel\obj\Debug\net8.0\refint\SharedModel.dll
 C:\Projects\Dev\AuctionApi\SharedModel\obj\Debug\net8.0\SharedModel.pdb
 C:\Projects\Dev\AuctionApi\SharedModel\obj\Debug\net8.0\ref\SharedModel.dll
+C:\Projects\Dev\AuctionApi\SharedModel\obj\Debug\net8.0\SharedModel.sourcelink.json

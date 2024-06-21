@@ -2,6 +2,7 @@
 using DataModel.Entity.AuctionEntity;
 using DataModel.Entity;
 using Microsoft.EntityFrameworkCore;
+using DataModel.Entity.Jobs;
 
 namespace DataModel.DB
 {
@@ -39,6 +40,15 @@ namespace DataModel.DB
              .HasIndex(c => new { c.Code })
              .IsUnique(true);
 
+            modelBuilder.Entity<Organisation>()
+                   .HasIndex(p => p.Tin)                   
+                   .IsUnique();
+            modelBuilder.Entity<Organisation>()
+                   .HasIndex(p => p.Name)
+                   .IsUnique();
+            modelBuilder.Entity<Organisation>()
+                 .HasIndex(p => p.Code)
+                 .IsUnique();
 
             ModelBuilderExt.SeedRole(modelBuilder);
             ModelBuilderExt.SeedUser(modelBuilder);
@@ -67,6 +77,11 @@ namespace DataModel.DB
         public virtual DbSet<Bid> Bid { get; set; } = null!;
         public virtual DbSet<ProductPictures> ProductPictures { get; set; } = null!;
         public virtual DbSet<Designation> Designation { get; set; } = null!;
+
+        // Job board specific entity
+
+        public virtual DbSet<Organisation> Organisation { get; set; } = null!;
+        public virtual DbSet<JobPost> JobPost { get; set; } = null!;
 
     }
 }

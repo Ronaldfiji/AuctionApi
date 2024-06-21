@@ -19,13 +19,13 @@ namespace Repository.Repository
         public RoleRepository(AuctionDBContext context, ILogger<RoleRepository> logger) : base(context, logger)
         { }
 
-        public override async Task<Role> Get(int id)
+        public async Task<RoleDto> GetById(int id)
         {
             try
             {
                 var user = await _context.Role
                     .FirstOrDefaultAsync(r => r.ID == id);
-                return user!;
+                return user?.ConvertToDto()!;
             }
             catch (Exception ex)
             {
@@ -34,7 +34,7 @@ namespace Repository.Repository
             }
         }
 
-        public async Task<PagedList<Role>> GetAllRoles(PagingRequestDto pagingRequestDto)
+        public async Task<PagedList<RoleDto>> GetAllRoles(PagingRequestDto pagingRequestDto)
         {
             try
             {
@@ -45,7 +45,7 @@ namespace Repository.Repository
                                     .ToListAsync();
 
                 int ItemCount = await _context.User.CountAsync();
-                return PagedList<Role>.ToPagedList(roles, ItemCount, pagingRequestDto.PageNumber, pagingRequestDto.PageSize);
+                return PagedList<RoleDto>.ToPagedList(roles.ConvertToDto(), ItemCount, pagingRequestDto.PageNumber, pagingRequestDto.PageSize);
 
             }
             catch (Exception ex)
@@ -54,11 +54,12 @@ namespace Repository.Repository
                 throw new Exception($"Failed to find roles  in database " + $": {ex.Message}");
             }
         }
-        public async Task<List<Role>> GetAll()
+        public async Task<List<RoleDto>> GetAll()
         {
             try
             {
-                return await _context.Role.ToListAsync();
+                var userRoles = await _context.Role.ToListAsync();
+                return userRoles.ConvertToDto().ToList();
             }
             catch (Exception ex)
             {
@@ -67,7 +68,7 @@ namespace Repository.Repository
             }
         }
 
-        public async Task<Role> CreateRole(RoleToAddEditDto roleToAdd)
+        public async Task<RoleDto> CreateRole(RoleToAddEditDto roleToAdd)
         {
             try
             {
@@ -81,7 +82,7 @@ namespace Repository.Repository
                 };
 
                 var newRole = await Add(role);
-                return newRole;
+                return newRole.ConvertToDto();
             }
             catch (Exception ex)
             {
@@ -90,7 +91,7 @@ namespace Repository.Repository
             }
         }
 
-        public async Task<Role> UpdateRole(int id, RoleToAddEditDto roleToAddEdit)
+        public async Task<RoleDto> UpdateRole(int id, RoleToAddEditDto roleToAddEdit)
         {
             try
             {
@@ -104,7 +105,8 @@ namespace Repository.Repository
                 role.IPAddress = roleToAddEdit.IPAddress;
                 role.ModifiedDate = roleToAddEdit.ModifiedDate;
                 role.UpdatedBy = roleToAddEdit.UpdatedBy;
-                return await UpdateAsync(role);
+                var updatedRole = await UpdateAsync(role);
+                return updatedRole.ConvertToDto();
 
             }
             catch (Exception ex)
@@ -114,7 +116,7 @@ namespace Repository.Repository
             }
         }
 
-        public async Task<Role> DeleteRole(int id)
+        public async Task<RoleDto> DeleteRole(int id)
         {
             try
             {
@@ -123,9 +125,9 @@ namespace Repository.Repository
                 if (item != null)
                 {
                     var deletedItem = await DeleteAsync(item);
-                    return deletedItem;
+                    return deletedItem.ConvertToDto();
                 }
-                return item!;
+                return item.ConvertToDto()!;
             }
             catch (Exception ex)
             {
@@ -134,13 +136,13 @@ namespace Repository.Repository
             }
         }
 
-        public async Task<Role> GetRoleByName(string name)
+        public async Task<RoleDto> GetRoleByName(string name)
         {
             try
             {
                 var role = await _context.Role
                                 .FirstOrDefaultAsync(r => r.Name.ToLower() == name.ToLower());
-                return role!;
+                return role?.ConvertToDto()!;
             }
             catch (Exception ex)
             {
