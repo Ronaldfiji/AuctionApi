@@ -1031,3 +1031,10 @@ C:\Projects\Dev\AuctionApi\Api\bin\Debug\net8.0\Resource\Static\Organisation\985
 C:\Projects\Dev\AuctionApi\Api\bin\Debug\net8.0\Resource\Static\Organisation\5823933664\5823933664NewWorldLogo_2.png
 C:\Projects\Dev\AuctionApi\Api\bin\Debug\net8.0\Resource\Static\Organisation\69558002536\69558002536VinodPatelLogo.png
 C:\Projects\Dev\AuctionApi\Api\bin\Debug\net8.0\Resource\Static\Organisation\52639445263\52639445263USPLogo.png
+C:\Projects\Dev\AuctionApi\Api\bin\Debug\net8.0\Resource\Static\Organisation\69336500558\69336500558FNU_Logo.png
+C:\Projects\Dev\AuctionApi\Api\bin\Debug\net8.0\Resource\Static\Organisation\548265785025\548265785025FSC_Logo.png
+C:\Projects\Dev\AuctionApi\Api\bin\Debug\net8.0\Resource\Static\Organisation\562653690014\562653690014EFL_Logo_1.png
+C:\Projects\Dev\AuctionApi\Api\bin\Debug\net8.0\Resource\Static\Organisation\56893260232\56893260232carpenters_fiji_LTD_logo-02.jpg
+C:\Projects\Dev\AuctionApi\Api\bin\Debug\net8.0\Resource\Static\Organisation\95623650323\95623650323pacific_1.png
+C:\Projects\Dev\AuctionApi\Api\bin\Debug\net8.0\Resource\Static\Organisation\58426393363\58426393363BLACK_SWAN_HIGH_RESOLUTION_LOGO_V2.jfif
+C:\Projects\Dev\AuctionApi\Api\bin\Debug\net8.0\Resource\Static\Organisation\85463954566\85463954566ENG_SIGNATURE_LOGO.jfif

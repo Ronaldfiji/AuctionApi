@@ -205,13 +205,17 @@ namespace Repository.Extention
                     {
                         jobPosts= jobPosts.Where(d => d.JobTitle.ToLower().Contains(columnValue.ToLower()));
                     }
+                    if (columnName.ToLower() == "jobtype")
+                    {
+                        jobPosts = jobPosts.Where(d => d.JobType.ToLower().Contains(columnValue.ToLower()));
+                    }
                     if (columnName.ToLower() == "category")
                     {
                         jobPosts = jobPosts.Where(d => d.Category.ToLower().Contains(columnValue.ToLower()));
                     }
-                    if (columnName.ToLower() == "city")
+                    if (columnName.ToLower() == "country")
                     {
-                        jobPosts = jobPosts.Where(d => d.City.ToLower().Contains(columnValue.ToLower()));
+                        jobPosts = jobPosts.Where(d => d.Country.ToLower().Contains(columnValue.ToLower()));
                     }
                     if (columnName.ToLower() == "isactive")
                     {

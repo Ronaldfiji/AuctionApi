@@ -77,9 +77,10 @@ namespace Repository.Repository.Jobs
             try
             {
                 IQueryable<JobPost> jobPostsQuery = from d in _context.JobPost.Include(p => p.Organisation) select d;
-                int ItemCount = await jobPostsQuery.CountAsync();
-
+               
                 jobPostsQuery = jobPostsQuery.SearchJobPost(pagingRequestDto);
+
+                int ItemCount = await jobPostsQuery.CountAsync();
 
                 if (string.Equals(pagingRequestDto.SortOrder?.Trim(), "desc", StringComparison.OrdinalIgnoreCase))
                 {
@@ -88,8 +89,7 @@ namespace Repository.Repository.Jobs
                     jobPostsQuery = jobPostsQuery
                                     .OrderByDescending(GetSortProperty(pagingRequestDto))
                                     .Skip((pagingRequestDto.PageNumber - 1) * pagingRequestDto.PageSize)
-                                    .Take(pagingRequestDto.PageSize);
-                                   
+                                    .Take(pagingRequestDto.PageSize);                                   
 
                 }
                 else
