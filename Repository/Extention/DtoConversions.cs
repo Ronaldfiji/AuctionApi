@@ -44,6 +44,7 @@ namespace Repository.Extention
                 Country = user.Country,
                 ImagePath= user.ImagePath,
                 IsActive = user.IsActive,
+                PasswordResetToken = user.PasswordResetToken,                
                 Roles = userRoles,
                 CreatedDate = user.CreatedDate,
                 ModifiedDate = user.ModifiedDate,

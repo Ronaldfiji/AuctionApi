@@ -62,6 +62,8 @@ namespace DataModel.Entity
         public string ImagePath { get; set; } = string.Empty;
 
         public bool IsActive { get; set; } = true;
+        [StringLength(200, ErrorMessage = "Password reset token should 200 characters or less.")]
+        public string PasswordResetToken { get; set; } = string.Empty;
 
         public int UserTypeID { get; set; }
 
@@ -70,6 +72,7 @@ namespace DataModel.Entity
         public virtual List<UserPictures> UserPictures { get; set; } = Enumerable.Empty<UserPictures>().ToList();
 
         public virtual ICollection<UserRole> UserRoles { get; set; }// = Enumerable.Empty<Role>().ToList();
+        
      
     }
 

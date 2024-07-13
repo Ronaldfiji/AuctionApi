@@ -1,8 +1,13 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Repository.Contracts;
+using Repository.Service.EmailService;
 using SharedModel.Dtos;
 using System.Data;
+using System.Reflection.Metadata.Ecma335;
+using System.Text.Json;
+using System.Text.Json.Serialization;
+using System.Text.RegularExpressions;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -17,15 +22,17 @@ namespace Api.Controllers
         private readonly IRoleRepository roleRepository;
         private ILogger<UserController> logger;
         private readonly IAuthRepository authRepository;
+        private IEmailService emailService;
         //private readonly IHttpContextAccessor _httpContextAccessor;
 
 
         public UserController(IUserRepository _userRepository, IRoleRepository _roleRepository,
-            IAuthRepository _authRepository, ILogger<UserController> _logger)
+            IAuthRepository _authRepository, ILogger<UserController> _logger, IEmailService _emailService)
         {
             authRepository = _authRepository;
             userRepository = _userRepository;
             roleRepository = _roleRepository;
+            emailService = _emailService;
             //mapper = _mapper;
             logger = _logger;
             //_httpContextAccessor= httpContextAccessor;
@@ -308,7 +315,7 @@ namespace Api.Controllers
                 {
                     return NotFound("User not found !");
                 }
-                    if (res.StatusCode == 200)
+                if (res.StatusCode == 200)
                 {
                     return Ok(res?.Data);
 
@@ -493,6 +500,116 @@ namespace Api.Controllers
 
         }
 
+   
+
+       
+        // POST: api/<UserController/SendPasswordForgotEmail>   
+        [AllowAnonymous]
+        [HttpPost("SendPasswordForgotEmail")]
+        public async Task<ActionResult> SendPasswordForgotEmail([FromBody] EmailDto emailDto)
+        {
+            try
+            {
+                if (Regex.IsMatch(emailDto.ToEmail, @"\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*") == false)
+                {
+                    return BadRequest(emailDto.ToEmail);
+                }              
+              
+                var user = await authRepository.GetPasswordResetToken(emailDto);
+
+                if (user == null || user.StatusCode == 401)
+                {
+                    return NotFound(new { message = $" Invalid email !" });
+                }
+
+                var passwordResetLink = $"{emailDto.ClientAppUrl}/{user?.Data?.Id}/{user?.Data?.PasswordResetToken}";
+
+                emailDto.Body = emailDto.Body + $"<div><a href='{passwordResetLink}'><button>Click to Reset Password</button></a></div>";
+                    
+                emailService.SendEmail(emailDto);
+
+                return Ok("Mail send successfully");
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
+
+            }
+
+        }
+
+        // GET: api/<UserController/VerifyPasswordForgotToken>
+        [AllowAnonymous]
+        [HttpGet("VerifyPasswordForgotToken/{id:int}/{token}")]       
+        public async Task<ActionResult> VerifyPasswordForgotToken(int id, string token)
+        {           
+            try
+            {                
+                var userDto = await this.userRepository.GetById(id);
+
+                if (userDto == null || userDto?.PasswordResetToken != token)
+                {
+                    return Unauthorized(new { Message = $"User not authorized ?, review error logs ? " });
+                }
+                // Validate token
+                var IsTokenValid = await authRepository.ValidatePasswordResetToken(token);
+                if(IsTokenValid?.Data == false)
+                {
+                    return BadRequest(new { Message = "Forgot password token expired !" });
+                }     
+                return Ok(new { Message = "Token is valid !" });
+
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
+
+            }
+        }
+
+        //PATCH: UserController/ResetForgotPassword{int id, PasswordResetDto}
+        [AllowAnonymous]
+        [HttpPatch("ResetForgotPassword/{id:int}/{token}")]
+        public async Task<ActionResult> ResetForgotPassword(int id,string token, [FromBody] PasswordResetDto passwordResetDto)
+        {
+            try
+            {
+                if (id != passwordResetDto.Id)
+                    return BadRequest("Profile ID mismatch");
+              
+                // Validate token
+                var IsTokenValid = await authRepository.ValidatePasswordResetToken(token);
+
+                if (IsTokenValid?.Data == false)
+                {
+                    return BadRequest(new { Message = "Forgot password token expired !" });
+                }
+
+                if (passwordResetDto == null || !ModelState.IsValid)
+                {
+                    return BadRequest($"{nameof(UserToEditDto)} cannot be null or empty !");
+                }               
+
+                if (passwordResetDto.Password != passwordResetDto.ConfirmPassword)
+                {
+                    return BadRequest(new { message = "Password and confirm password do not match !", StatusCode = 400 });
+                }
+
+                var updatedUser = await authRepository.ResetForgotPassword(id, passwordResetDto);
+
+                if (updatedUser.StatusCode == 200)
+                {
+                    return Ok(updatedUser);
+                }
+                return NotFound(new { message = "Updates failed, review error and try again !", StatusCode = 401 });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
+            }
+
+        }
+
 
         // Helper methods
 
@@ -528,3 +645,11 @@ namespace Api.Controllers
 
     }
 }
+
+/*var model = JsonSerializer.Serialize(pagingRequestDto.FilterList, new JsonSerializerOptions
+{
+    WriteIndented = true,
+    ReferenceHandler = ReferenceHandler.IgnoreCycles
+});
+Console.WriteLine("Filter list is : " + model);
+*/

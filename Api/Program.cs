@@ -18,6 +18,8 @@ using Repository.Repository.Contracts;
 using PayApi.Extentions.Policy;
 using Repository.Repository.Jobs.Contracts;
 using Repository.Repository.Jobs;
+using MailKit;
+using Repository.Service.EmailService;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -86,6 +88,7 @@ builder.Services.AddAuthentication(options => {
 
 builder.Services.AddSingleton<IPayrollConfiguration, PayrollConfiguration>();
 builder.Services.AddTransient<AuthServices>();
+builder.Services.AddScoped<IEmailService, EmailService>();
 
 builder.Services.AddControllers();
 builder.Services.AddHealthChecks();

@@ -24,7 +24,8 @@ namespace SharedModel.Dtos
         public string Country { get; set; } = string.Empty;
         public UserTypeDto? UserType { get; set; }     
         public string ImagePath { get; set; } = string.Empty;
-        public bool IsActive { get; set; } 
+        public bool IsActive { get; set; }    
+        public string PasswordResetToken { get; set; } = string.Empty;
         [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy HH:mm:ss}")]
         public DateTime? CreatedDate { get; set; }
         [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy HH:mm:ss}")]

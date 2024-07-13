@@ -4,6 +4,7 @@ using Repository.Repository.Auction;
 using Repository.Repository.Auction.Contracts;
 using Repository.Repository.Jobs;
 using Repository.Repository.Jobs.Contracts;
+using Repository.Service.EmailService;
 using SharedModel.AutionsDto;
 using SharedModel.Dtos;
 using SharedModel.JobsDto;
@@ -20,11 +21,13 @@ namespace Api.Controllers.JobPost
    
         private readonly IJobPostRepository jobPostRepository;
         private ILogger<JobPostController> logger;
+        private IEmailService emailService;
 
-        public JobPostController(IJobPostRepository _jobPostRepository, ILogger<JobPostController> _logger)
+        public JobPostController(IJobPostRepository _jobPostRepository, ILogger<JobPostController> _logger, IEmailService _emailService)
         {
            jobPostRepository = _jobPostRepository;
-            logger = _logger;
+           logger = _logger;
+           emailService = _emailService;
         }
 
         // GET api/<JobPostController>GetJobPost/5
@@ -260,6 +263,9 @@ namespace Api.Controllers.JobPost
                 return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
             }
         }
+
+        
+
 
 
     }

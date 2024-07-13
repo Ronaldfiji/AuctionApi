@@ -1038,3 +1038,7 @@ C:\Projects\Dev\AuctionApi\Api\bin\Debug\net8.0\Resource\Static\Organisation\568
 C:\Projects\Dev\AuctionApi\Api\bin\Debug\net8.0\Resource\Static\Organisation\95623650323\95623650323pacific_1.png
 C:\Projects\Dev\AuctionApi\Api\bin\Debug\net8.0\Resource\Static\Organisation\58426393363\58426393363BLACK_SWAN_HIGH_RESOLUTION_LOGO_V2.jfif
 C:\Projects\Dev\AuctionApi\Api\bin\Debug\net8.0\Resource\Static\Organisation\85463954566\85463954566ENG_SIGNATURE_LOGO.jfif
+C:\Projects\Dev\AuctionApi\Api\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
+C:\Projects\Dev\AuctionApi\Api\bin\Debug\net8.0\MailKit.dll
+C:\Projects\Dev\AuctionApi\Api\bin\Debug\net8.0\MimeKit.dll
+C:\Projects\Dev\AuctionApi\Api\bin\Debug\net8.0\Resource\Static\Profile\4596335\4596335SoccerRon.jpg

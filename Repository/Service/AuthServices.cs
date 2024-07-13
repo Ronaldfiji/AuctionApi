@@ -1,6 +1,7 @@
 ﻿using DataModel.DB;
 using DataModel.Entity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
@@ -14,6 +15,7 @@ using System.Security.Claims;
 using System.Text;
 using System.Text.Json;
 using System.Text.Json.Serialization;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Model;
 
 
 namespace Repository.Service
@@ -228,9 +230,68 @@ namespace Repository.Service
             return claims;
         }
 
+        
+        public async Task<TokenDto>  GetPasswordResetToken( User user)
+        {
+            try
+            {
+                var jwtTokenHandler = new JwtSecurityTokenHandler();
+                var key = Encoding.ASCII.GetBytes(payrollConfiguration.GetConfigurationSection("App_Settings").GetSection("Secret").Value ?? "");
 
+                //var claims = await GetAllValidClaims(user);
+                int tokenExpiry = int.Parse(payrollConfiguration.GetConfigurationSection("App_Settings")
+                    .GetSection("PassowrdResetTokenExpirationSeconds").Value ?? "");
 
+                var tokenDescriptor = new SecurityTokenDescriptor
+                {
+                    Subject = new ClaimsIdentity(new List<Claim> { new Claim(JwtRegisteredClaimNames.Sub, user.ID.ToString()) }),
+                    IssuedAt = DateTime.UtcNow,
+                    Expires = DateTime.UtcNow.AddHours(12).AddSeconds(tokenExpiry),
+                    SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature),
+                    Issuer = payrollConfiguration.GetConfigurationSection("App_Settings").GetSection("Issuer").Value,
+                    Audience = payrollConfiguration.GetConfigurationSection("App_Settings").GetSection("Audience").Value,
 
+                };
+                var token = jwtTokenHandler.CreateToken(tokenDescriptor);
+                var jwtToken = jwtTokenHandler.WriteToken(token);
+
+                var tokenRequest = new TokenDto
+                {
+                    AccessToken = jwtToken,
+                    AccessTokenExpiry = token.ValidTo,
+                };
+                return await Task.FromResult(tokenRequest);
+            }
+            catch 
+            {
+                throw;
+            }
+        }
+
+        public async Task< Dictionary<string, string>>  GetPasswordResetTokenInfo(string token)
+        {
+            try
+            {
+                var TokenInfo = new Dictionary<string, string>();
+
+                var handler = new JwtSecurityTokenHandler();
+                var jwtSecurityToken = handler.ReadJwtToken(token);
+                var claims = jwtSecurityToken.Claims.ToList();
+
+                foreach (var claim in claims)
+                {
+                    TokenInfo.Add(claim.Type, claim.Value);
+                }                
+
+                return await Task.FromResult( TokenInfo);
+                
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "{Repo} Failed to get token data !!", typeof(AuthServices));
+                throw new Exception($"Failed to get token data " + $": {ex.Message}");
+            }
+        }
 
     }
 }

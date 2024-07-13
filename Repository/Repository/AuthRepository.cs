@@ -3,11 +3,16 @@ using DataModel.Entity;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
+using Microsoft.IdentityModel.Tokens;
 using Repository.Config;
 using Repository.Contracts;
 using Repository.Extention;
 using Repository.Service;
 using SharedModel.Dtos;
+using System.Collections.Generic;
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
+using static System.Net.WebRequestMethods;
 
 
 namespace Repository.Repository
@@ -122,8 +127,7 @@ namespace Repository.Repository
             {
                 var serviceRes = new ServiceResponse<PasswordResetDto>();
 
-                var user = await _context.User.FindAsync(id);                
-                
+                var user = await _context.User.FindAsync(id); 
 
                 if (user == null || !BCrypt.Net.BCrypt.Verify(passwordResetDto.CurrentPassword, user.Password) || !user.IsActive)
                 {
@@ -132,13 +136,12 @@ namespace Repository.Repository
                     return serviceRes;
                 }
 
-                user.Password = BCrypt.Net.BCrypt.HashPassword(passwordResetDto.Password);
+                user.Password = BCrypt.Net.BCrypt.HashPassword(passwordResetDto.Password);            
                 user.ModifiedDate = DateTime.UtcNow.AddHours(12);
                 var updatedUser = await UpdateAsync(user);              
 
                 return new ServiceResponse<PasswordResetDto>                
-                {
-                    
+                {                    
                     Message = "Password has been reset successfully  !",
                     StatusCode = 200,
                 };
@@ -151,6 +154,111 @@ namespace Repository.Repository
 
         }
         
+        public async Task<ServiceResponse<UserDto>> GetPasswordResetToken(EmailDto emailDto)
+        {
+            try
+            {
+                var user = await FindItem(u => u.Email == emailDto.ToEmail);
+                if (user == null) return new ServiceResponse<UserDto>
+                {
+                    Message="User not found !", StatusCode = 401,                    
+                };
+
+                var token = await authService.GetPasswordResetToken(user);
+
+                user.PasswordResetToken = token.AccessToken;
+                var updatedUser = await UpdateAsync(user);  
+            
+                return new ServiceResponse<UserDto>
+                {
+                    Data = updatedUser.ConvertToDto(),
+                    Message = "Token created successfully!",
+                    StatusCode = 200,
+                   
+                };
+
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "{Repo} GetPasswordResetToken() method error, failed to send password reset URL !!", typeof(AuthRepository));
+                throw new Exception($"Failed to send password reset token. " + $": {ex.Message}");
+            }
+        }
+
+        public async Task<ServiceResponse<bool>> ValidatePasswordResetToken(string token)
+        {
+            try
+            {
+                //var tokenData = GetTokenInfo(token);
+                var tokenData = await authService.GetPasswordResetTokenInfo(token);
+
+                long expTime = long.Parse(tokenData.FirstOrDefault(c => c.Key == "exp").Value);
+                DateTimeOffset dateTimeOffset = DateTimeOffset.FromUnixTimeSeconds(expTime);       
+                if(dateTimeOffset < DateTime.UtcNow.AddHours(12))
+                {
+                    return new ServiceResponse<bool>
+                    {
+                        Data = false,
+                        Message = "Token expired!",
+                        StatusCode = 400,
+
+                    };
+                }
+                return new ServiceResponse<bool>
+                {
+                    Data = true,
+                    Message = "Token validated successfully!",
+                    StatusCode = 200,
+
+                };
+                
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "{Repo} ValidatePasswordResetToken() method error, failed to send password reset URL !!", typeof(AuthRepository));
+                throw new Exception($"Failed validate forgot password reset token " + $": {ex.Message}");
+            }
+        }
+
+
+        public async Task<ServiceResponse<PasswordResetDto>> ResetForgotPassword(int id, PasswordResetDto passwordResetDto)
+        {
+            try
+            {
+                var serviceRes = new ServiceResponse<PasswordResetDto>();
+
+                var user = await _context.User.FindAsync(id);
+
+                if (user == null  || !user.IsActive)
+                {
+                    serviceRes.StatusCode = 404;
+                    serviceRes.Message = "Invalid credentials or user is inactive";
+                    return serviceRes;
+                }
+
+                user.Password = BCrypt.Net.BCrypt.HashPassword(passwordResetDto.Password);
+                if (!user.PasswordResetToken.IsNullOrEmpty())
+                {
+                    user.PasswordResetToken = "";
+                }
+                user.ModifiedDate = DateTime.UtcNow.AddHours(12);
+                var updatedUser = await UpdateAsync(user);
+
+                return new ServiceResponse<PasswordResetDto>
+                {
+                    Message = "Password has been reset successfully  !",
+                    StatusCode = 200,
+                };
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "{Repo} ResetUserPassword() method error, failed to reset user password !!", typeof(AuthRepository));
+                throw new Exception($"Failed to reset user password user into the system. " + $": {ex.Message}");
+            }
+
+        }
+
+
     }
         
 }

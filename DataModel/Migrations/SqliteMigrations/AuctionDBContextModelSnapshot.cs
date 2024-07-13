@@ -117,7 +117,7 @@ namespace DataModel.Migrations.SqliteMigrations
                             ID = 1,
                             Code = "CAT0001",
                             CreatedBy = "Ron_cr",
-                            CreatedDate = new DateTime(2024, 6, 13, 16, 26, 35, 384, DateTimeKind.Utc).AddTicks(9695),
+                            CreatedDate = new DateTime(2024, 7, 8, 16, 5, 24, 532, DateTimeKind.Utc).AddTicks(5823),
                             Description = "Automotive and Spare parts category",
                             IPAddress = "10.56.89.255",
                             Icon = "LocalShipping",
@@ -129,7 +129,7 @@ namespace DataModel.Migrations.SqliteMigrations
                             ID = 2,
                             Code = "CAT0002",
                             CreatedBy = "Ron_cr",
-                            CreatedDate = new DateTime(2024, 6, 13, 16, 26, 35, 384, DateTimeKind.Utc).AddTicks(9698),
+                            CreatedDate = new DateTime(2024, 7, 8, 16, 5, 24, 532, DateTimeKind.Utc).AddTicks(5825),
                             Description = "Cell Phones & Accessories category",
                             IPAddress = "10.56.89.255",
                             Icon = "LocalShipping",
@@ -141,7 +141,7 @@ namespace DataModel.Migrations.SqliteMigrations
                             ID = 3,
                             Code = "CAT0003",
                             CreatedBy = "Ron_cr",
-                            CreatedDate = new DateTime(2024, 6, 13, 16, 26, 35, 384, DateTimeKind.Utc).AddTicks(9699),
+                            CreatedDate = new DateTime(2024, 7, 8, 16, 5, 24, 532, DateTimeKind.Utc).AddTicks(5827),
                             Description = "Cell Phones & Accessories category",
                             IPAddress = "10.56.89.255",
                             Icon = "LocalShipping",
@@ -153,7 +153,7 @@ namespace DataModel.Migrations.SqliteMigrations
                             ID = 4,
                             Code = "CAT0004",
                             CreatedBy = "Ron_cr",
-                            CreatedDate = new DateTime(2024, 6, 13, 16, 26, 35, 384, DateTimeKind.Utc).AddTicks(9701),
+                            CreatedDate = new DateTime(2024, 7, 8, 16, 5, 24, 532, DateTimeKind.Utc).AddTicks(5828),
                             Description = "Jewelry & Watches category",
                             IPAddress = "10.56.89.255",
                             Icon = "LocalShipping",
@@ -165,7 +165,7 @@ namespace DataModel.Migrations.SqliteMigrations
                             ID = 5,
                             Code = "CAT0005",
                             CreatedBy = "Ron_cr",
-                            CreatedDate = new DateTime(2024, 6, 13, 16, 26, 35, 384, DateTimeKind.Utc).AddTicks(9702),
+                            CreatedDate = new DateTime(2024, 7, 8, 16, 5, 24, 532, DateTimeKind.Utc).AddTicks(5830),
                             Description = "Consumer Electronics category",
                             IPAddress = "10.56.89.255",
                             Icon = "LocalShipping",
@@ -177,7 +177,7 @@ namespace DataModel.Migrations.SqliteMigrations
                             ID = 6,
                             Code = "CAT0006",
                             CreatedBy = "Ron_cr",
-                            CreatedDate = new DateTime(2024, 6, 13, 16, 26, 35, 384, DateTimeKind.Utc).AddTicks(9703),
+                            CreatedDate = new DateTime(2024, 7, 8, 16, 5, 24, 532, DateTimeKind.Utc).AddTicks(5831),
                             Description = "Real Estate category",
                             IPAddress = "10.56.89.255",
                             Icon = "LocalShipping",
@@ -232,7 +232,7 @@ namespace DataModel.Migrations.SqliteMigrations
                         {
                             ID = 1,
                             CreatedBy = "Ron_cr",
-                            CreatedDate = new DateTime(2024, 6, 13, 16, 26, 35, 384, DateTimeKind.Utc).AddTicks(9820),
+                            CreatedDate = new DateTime(2024, 7, 8, 16, 5, 24, 532, DateTimeKind.Utc).AddTicks(5994),
                             Description = "Senior full-stack software engineer",
                             IPAddress = "10.56.89.255",
                             JobTitle = "Senior Software Engineer",
@@ -283,7 +283,7 @@ namespace DataModel.Migrations.SqliteMigrations
                         {
                             ID = 1,
                             CreatedBy = "Ron_cr",
-                            CreatedDate = new DateTime(2024, 6, 13, 16, 26, 35, 384, DateTimeKind.Utc).AddTicks(9736),
+                            CreatedDate = new DateTime(2024, 7, 8, 16, 5, 24, 532, DateTimeKind.Utc).AddTicks(5861),
                             Description = "A brand-new, unused, unopened, unworn, undamaged item. Most categories support this condition (as long as condition is an applicable concept.",
                             IPAddress = "10.56.89.255",
                             State = "New",
@@ -293,7 +293,7 @@ namespace DataModel.Migrations.SqliteMigrations
                         {
                             ID = 2,
                             CreatedBy = "Ron_cr",
-                            CreatedDate = new DateTime(2024, 6, 13, 16, 26, 35, 384, DateTimeKind.Utc).AddTicks(9738),
+                            CreatedDate = new DateTime(2024, 7, 8, 16, 5, 24, 532, DateTimeKind.Utc).AddTicks(5863),
                             Description = "A brand-new new, unused item with no signs of wear. Packaging may be missing or opened. The item may be a factory second or have defects",
                             IPAddress = "10.56.89.255",
                             State = "New other",
@@ -303,7 +303,7 @@ namespace DataModel.Migrations.SqliteMigrations
                         {
                             ID = 3,
                             CreatedBy = "Ron_cr",
-                            CreatedDate = new DateTime(2024, 6, 13, 16, 26, 35, 384, DateTimeKind.Utc).AddTicks(9739),
+                            CreatedDate = new DateTime(2024, 7, 8, 16, 5, 24, 532, DateTimeKind.Utc).AddTicks(5917),
                             Description = "A brand-new, unused, and unworn item. The item may have cosmetic defects, and/or may contain mismarked tags (e.g., incorrect size tags from the manufacturer). Packaging may be missing or opened. The item may be a new factory second or irregular.",
                             IPAddress = "10.56.89.255",
                             State = "New with defects",
@@ -313,7 +313,7 @@ namespace DataModel.Migrations.SqliteMigrations
                         {
                             ID = 4,
                             CreatedBy = "Ron_cr",
-                            CreatedDate = new DateTime(2024, 6, 13, 16, 26, 35, 384, DateTimeKind.Utc).AddTicks(9740),
+                            CreatedDate = new DateTime(2024, 7, 8, 16, 5, 24, 532, DateTimeKind.Utc).AddTicks(5918),
                             Description = "The item is in a pristine, like-new condition. It has been professionally inspected, cleaned, and refurbished by the manufacturer or a manufacturer-approved vendor to meet manufacturer specifications. The item will be in new packaging with original or new accessories.",
                             IPAddress = "10.56.89.255",
                             State = "Refurbished",
@@ -323,7 +323,7 @@ namespace DataModel.Migrations.SqliteMigrations
                         {
                             ID = 5,
                             CreatedBy = "Ron_cr",
-                            CreatedDate = new DateTime(2024, 6, 13, 16, 26, 35, 384, DateTimeKind.Utc).AddTicks(9742),
+                            CreatedDate = new DateTime(2024, 7, 8, 16, 5, 24, 532, DateTimeKind.Utc).AddTicks(5919),
                             Description = "The item is in like-new condition, backed by a one year warranty. It has been professionally refurbished, inspected, and cleaned to excellent condition by qualified sellers. The item includes original or new accessories and will come in new generic packaging. See the seller's listing for full details.",
                             IPAddress = "10.56.89.255",
                             State = "Excellent - Refurbished",
@@ -333,7 +333,7 @@ namespace DataModel.Migrations.SqliteMigrations
                         {
                             ID = 6,
                             CreatedBy = "Ron_cr",
-                            CreatedDate = new DateTime(2024, 6, 13, 16, 26, 35, 384, DateTimeKind.Utc).AddTicks(9743),
+                            CreatedDate = new DateTime(2024, 7, 8, 16, 5, 24, 532, DateTimeKind.Utc).AddTicks(5920),
                             Description = "An item that looks as if it was just taken out of shrink wrap. No visible wear, and all facets of the item are flawless and intact. See the seller's listing for full details and description of any imperfections.",
                             IPAddress = "10.56.89.255",
                             State = "Like New",
@@ -343,7 +343,7 @@ namespace DataModel.Migrations.SqliteMigrations
                         {
                             ID = 7,
                             CreatedBy = "Ron_cr",
-                            CreatedDate = new DateTime(2024, 6, 13, 16, 26, 35, 384, DateTimeKind.Utc).AddTicks(9744),
+                            CreatedDate = new DateTime(2024, 7, 8, 16, 5, 24, 532, DateTimeKind.Utc).AddTicks(5921),
                             Description = "An item that has been used previously. The item may have some signs of cosmetic wear, but is fully operational and functions as intended. This item may be a floor model or store return that has been used. Most categories support this condition (as long as condition is an applicable concept).",
                             IPAddress = "10.56.89.255",
                             State = "Used",
@@ -353,7 +353,7 @@ namespace DataModel.Migrations.SqliteMigrations
                         {
                             ID = 8,
                             CreatedBy = "Ron_cr",
-                            CreatedDate = new DateTime(2024, 6, 13, 16, 26, 35, 384, DateTimeKind.Utc).AddTicks(9745),
+                            CreatedDate = new DateTime(2024, 7, 8, 16, 5, 24, 532, DateTimeKind.Utc).AddTicks(5922),
                             Description = "An item that is used but still in very good condition. No obvious damage to the cover or jewel case. No missing or damaged pages or liner notes. The instructions (if applicable) are included in the box. May have very minimal identifying marks on the inside cover. Very minimal wear and tear.",
                             IPAddress = "10.56.89.255",
                             State = "Very Good",
@@ -363,7 +363,7 @@ namespace DataModel.Migrations.SqliteMigrations
                         {
                             ID = 9,
                             CreatedBy = "Ron_cr",
-                            CreatedDate = new DateTime(2024, 6, 13, 16, 26, 35, 384, DateTimeKind.Utc).AddTicks(9746),
+                            CreatedDate = new DateTime(2024, 7, 8, 16, 5, 24, 532, DateTimeKind.Utc).AddTicks(5923),
                             Description = "An item with obvious or significant wear, but still operational. For books, liner notes, or instructions, the item may have some damage to the cover but the integrity is still intact. Instructions and/or box may be missing. For books, possible writing in margins, etc., but no missing pages or anything that would compromise the legibility or understanding of the text.",
                             IPAddress = "10.56.89.255",
                             State = "Acceptable",
@@ -373,7 +373,7 @@ namespace DataModel.Migrations.SqliteMigrations
                         {
                             ID = 10,
                             CreatedBy = "Ron_cr",
-                            CreatedDate = new DateTime(2024, 6, 13, 16, 26, 35, 384, DateTimeKind.Utc).AddTicks(9747),
+                            CreatedDate = new DateTime(2024, 7, 8, 16, 5, 24, 532, DateTimeKind.Utc).AddTicks(5924),
                             Description = "An item that does not function as intended and is not fully operational. This includes items that are defective in ways that render them difficult to use, items that require service or repair, or items missing essential components. Supported in categories where parts or non-working items are of interest to people who repair or collect related items.",
                             IPAddress = "10.56.89.255",
                             State = "For parts or not working",
@@ -731,7 +731,7 @@ namespace DataModel.Migrations.SqliteMigrations
                         {
                             ID = 1,
                             CreatedBy = "",
-                            CreatedDate = new DateTime(2024, 6, 13, 16, 26, 34, 880, DateTimeKind.Utc).AddTicks(4523),
+                            CreatedDate = new DateTime(2024, 7, 8, 16, 5, 24, 40, DateTimeKind.Utc).AddTicks(2015),
                             Description = "User role",
                             IPAddress = "",
                             Name = "User",
@@ -741,7 +741,7 @@ namespace DataModel.Migrations.SqliteMigrations
                         {
                             ID = 2,
                             CreatedBy = "",
-                            CreatedDate = new DateTime(2024, 6, 13, 16, 26, 34, 880, DateTimeKind.Utc).AddTicks(4565),
+                            CreatedDate = new DateTime(2024, 7, 8, 16, 5, 24, 40, DateTimeKind.Utc).AddTicks(2057),
                             Description = "Admin role",
                             IPAddress = "",
                             Name = "Admin",
@@ -751,7 +751,7 @@ namespace DataModel.Migrations.SqliteMigrations
                         {
                             ID = 3,
                             CreatedBy = "",
-                            CreatedDate = new DateTime(2024, 6, 13, 16, 26, 34, 880, DateTimeKind.Utc).AddTicks(4585),
+                            CreatedDate = new DateTime(2024, 7, 8, 16, 5, 24, 40, DateTimeKind.Utc).AddTicks(2074),
                             Description = "HOD role",
                             IPAddress = "",
                             Name = "HOD",
@@ -761,7 +761,7 @@ namespace DataModel.Migrations.SqliteMigrations
                         {
                             ID = 4,
                             CreatedBy = "",
-                            CreatedDate = new DateTime(2024, 6, 13, 16, 26, 34, 880, DateTimeKind.Utc).AddTicks(4604),
+                            CreatedDate = new DateTime(2024, 7, 8, 16, 5, 24, 40, DateTimeKind.Utc).AddTicks(2091),
                             Description = "Manager role",
                             IPAddress = "",
                             Name = "Manager",
@@ -771,7 +771,7 @@ namespace DataModel.Migrations.SqliteMigrations
                         {
                             ID = 5,
                             CreatedBy = "",
-                            CreatedDate = new DateTime(2024, 6, 13, 16, 26, 34, 880, DateTimeKind.Utc).AddTicks(4622),
+                            CreatedDate = new DateTime(2024, 7, 8, 16, 5, 24, 40, DateTimeKind.Utc).AddTicks(2109),
                             Description = "Master Admin role",
                             IPAddress = "",
                             Name = "MasterAdmin",
@@ -781,7 +781,7 @@ namespace DataModel.Migrations.SqliteMigrations
                         {
                             ID = 6,
                             CreatedBy = "",
-                            CreatedDate = new DateTime(2024, 6, 13, 16, 26, 34, 880, DateTimeKind.Utc).AddTicks(4642),
+                            CreatedDate = new DateTime(2024, 7, 8, 16, 5, 24, 40, DateTimeKind.Utc).AddTicks(2128),
                             Description = "HR Admin",
                             IPAddress = "",
                             Name = "HROffice",
@@ -791,7 +791,7 @@ namespace DataModel.Migrations.SqliteMigrations
                         {
                             ID = 7,
                             CreatedBy = "",
-                            CreatedDate = new DateTime(2024, 6, 13, 16, 26, 34, 880, DateTimeKind.Utc).AddTicks(4666),
+                            CreatedDate = new DateTime(2024, 7, 8, 16, 5, 24, 40, DateTimeKind.Utc).AddTicks(2153),
                             Description = "Director role",
                             IPAddress = "",
                             Name = "Director",
@@ -872,6 +872,11 @@ namespace DataModel.Migrations.SqliteMigrations
                         .HasMaxLength(200)
                         .HasColumnType("TEXT");
 
+                    b.Property<string>("PasswordResetToken")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("TEXT");
+
                     b.Property<string>("Phone")
                         .IsRequired()
                         .HasMaxLength(12)
@@ -912,7 +917,7 @@ namespace DataModel.Migrations.SqliteMigrations
                             City = "Levuka",
                             Country = "Fiji",
                             CreatedBy = "Admin-cr",
-                            CreatedDate = new DateTime(2024, 6, 13, 16, 26, 35, 2, DateTimeKind.Utc).AddTicks(5519),
+                            CreatedDate = new DateTime(2024, 7, 8, 16, 5, 24, 158, DateTimeKind.Utc).AddTicks(3536),
                             DOB = new DateTime(1956, 7, 21, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "admin@admin.com",
                             FirstName = "Admin",
@@ -921,7 +926,8 @@ namespace DataModel.Migrations.SqliteMigrations
                             ImagePath = "",
                             IsActive = true,
                             LastName = "Limited",
-                            Password = "$2a$11$sv7STXjWFSQqwKw//5UpD.ei8LDfkNQCRjKL0oyYe17n3STCGOHgW",
+                            Password = "$2a$11$izSDQh9f2Y/IKISga.GNdOvje7u/qKwGCtaxHYfZpCgEqDF/O1Siy",
+                            PasswordResetToken = "",
                             Phone = "9090337",
                             PostalCode = "0123",
                             State = "BlackWater",
@@ -936,7 +942,7 @@ namespace DataModel.Migrations.SqliteMigrations
                             City = "Apia",
                             Country = "Samoa",
                             CreatedBy = "Admin-cr",
-                            CreatedDate = new DateTime(2024, 6, 13, 16, 26, 35, 136, DateTimeKind.Utc).AddTicks(1147),
+                            CreatedDate = new DateTime(2024, 7, 8, 16, 5, 24, 284, DateTimeKind.Utc).AddTicks(8306),
                             DOB = new DateTime(1979, 7, 29, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "john@mail.com",
                             FirstName = "John",
@@ -945,7 +951,8 @@ namespace DataModel.Migrations.SqliteMigrations
                             ImagePath = "",
                             IsActive = true,
                             LastName = "Smith",
-                            Password = "$2a$11$m2pNH1N5MdBFGZCkdVwLUuSOs/DHm52/AWlkFbxwbLKYkRHbtTS/.",
+                            Password = "$2a$11$UIU1JQs7WKB9ORtau5TuPuAYOU4M1Y7iTdtglguVeDj/D/aE8.L4m",
+                            PasswordResetToken = "",
                             Phone = "74789699",
                             PostalCode = "458",
                             State = "North",
@@ -960,7 +967,7 @@ namespace DataModel.Migrations.SqliteMigrations
                             City = "Port Vila",
                             Country = "Vanuatu",
                             CreatedBy = "Admin-cr",
-                            CreatedDate = new DateTime(2024, 6, 13, 16, 26, 35, 264, DateTimeKind.Utc).AddTicks(2563),
+                            CreatedDate = new DateTime(2024, 7, 8, 16, 5, 24, 414, DateTimeKind.Utc).AddTicks(9242),
                             DOB = new DateTime(1983, 9, 30, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "peter@mail.com",
                             FirstName = "Peter",
@@ -969,7 +976,8 @@ namespace DataModel.Migrations.SqliteMigrations
                             ImagePath = "",
                             IsActive = true,
                             LastName = "Gates",
-                            Password = "$2a$11$2HA4ENVw8plPk4bbrtPva.THEdZwV0cGggcxW0qc4Gglmp1QHQGvi",
+                            Password = "$2a$11$HVBrG2jFj8Ov5LLQD5FX9OSYxCgJi7NA1JKZggsfXYzuCxQRBJyeK",
+                            PasswordResetToken = "",
                             Phone = "8890337",
                             PostalCode = "889",
                             State = "Ocean",
@@ -984,7 +992,7 @@ namespace DataModel.Migrations.SqliteMigrations
                             City = "Auckland",
                             Country = "New zealand",
                             CreatedBy = "Admin-cr",
-                            CreatedDate = new DateTime(2024, 6, 13, 16, 26, 35, 384, DateTimeKind.Utc).AddTicks(8887),
+                            CreatedDate = new DateTime(2024, 7, 8, 16, 5, 24, 532, DateTimeKind.Utc).AddTicks(5001),
                             DOB = new DateTime(1983, 9, 30, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "monika@mail.com",
                             FirstName = "Monika",
@@ -993,7 +1001,8 @@ namespace DataModel.Migrations.SqliteMigrations
                             ImagePath = "",
                             IsActive = true,
                             LastName = "Kumar",
-                            Password = "$2a$11$xrnnegtGJ7LuL9y6SLtBreVhpv3wQT9aiavVezUlYL5.d/4C16T9i",
+                            Password = "$2a$11$tQBMuPYxuhgc7MciscZGquY9QrvjvY/5Y1a98P5oy8hY8CUAAU3f6",
+                            PasswordResetToken = "",
                             Phone = "9090337",
                             PostalCode = "064",
                             State = "North",
@@ -1086,7 +1095,7 @@ namespace DataModel.Migrations.SqliteMigrations
                             UserId = 1,
                             RoleId = 1,
                             CreatedBy = "Admin-cr",
-                            CreatedDate = new DateTime(2024, 6, 13, 16, 26, 35, 384, DateTimeKind.Utc).AddTicks(9637),
+                            CreatedDate = new DateTime(2024, 7, 8, 16, 5, 24, 532, DateTimeKind.Utc).AddTicks(5771),
                             IPAddress = "107.23.365.369",
                             UpdatedBy = "Admin-up"
                         },
@@ -1095,7 +1104,7 @@ namespace DataModel.Migrations.SqliteMigrations
                             UserId = 1,
                             RoleId = 5,
                             CreatedBy = "Admin-cr",
-                            CreatedDate = new DateTime(2024, 6, 13, 16, 26, 35, 384, DateTimeKind.Utc).AddTicks(9641),
+                            CreatedDate = new DateTime(2024, 7, 8, 16, 5, 24, 532, DateTimeKind.Utc).AddTicks(5774),
                             IPAddress = "107.23.365.369",
                             UpdatedBy = "Admin-up"
                         },
@@ -1104,7 +1113,7 @@ namespace DataModel.Migrations.SqliteMigrations
                             UserId = 1,
                             RoleId = 7,
                             CreatedBy = "Admin-cr",
-                            CreatedDate = new DateTime(2024, 6, 13, 16, 26, 35, 384, DateTimeKind.Utc).AddTicks(9643),
+                            CreatedDate = new DateTime(2024, 7, 8, 16, 5, 24, 532, DateTimeKind.Utc).AddTicks(5775),
                             IPAddress = "107.23.365.369",
                             UpdatedBy = "Admin-up"
                         },
@@ -1113,7 +1122,7 @@ namespace DataModel.Migrations.SqliteMigrations
                             UserId = 2,
                             RoleId = 1,
                             CreatedBy = "Admin-cr",
-                            CreatedDate = new DateTime(2024, 6, 13, 16, 26, 35, 384, DateTimeKind.Utc).AddTicks(9645),
+                            CreatedDate = new DateTime(2024, 7, 8, 16, 5, 24, 532, DateTimeKind.Utc).AddTicks(5777),
                             IPAddress = "107.23.365.369",
                             UpdatedBy = "Admin-up"
                         },
@@ -1122,7 +1131,7 @@ namespace DataModel.Migrations.SqliteMigrations
                             UserId = 3,
                             RoleId = 1,
                             CreatedBy = "Admin-cr",
-                            CreatedDate = new DateTime(2024, 6, 13, 16, 26, 35, 384, DateTimeKind.Utc).AddTicks(9646),
+                            CreatedDate = new DateTime(2024, 7, 8, 16, 5, 24, 532, DateTimeKind.Utc).AddTicks(5778),
                             IPAddress = "107.23.365.369",
                             UpdatedBy = "Admin-up"
                         },
@@ -1131,7 +1140,7 @@ namespace DataModel.Migrations.SqliteMigrations
                             UserId = 3,
                             RoleId = 2,
                             CreatedBy = "Admin-cr",
-                            CreatedDate = new DateTime(2024, 6, 13, 16, 26, 35, 384, DateTimeKind.Utc).AddTicks(9648),
+                            CreatedDate = new DateTime(2024, 7, 8, 16, 5, 24, 532, DateTimeKind.Utc).AddTicks(5780),
                             IPAddress = "107.23.365.369",
                             UpdatedBy = "Admin-up"
                         },
@@ -1140,7 +1149,7 @@ namespace DataModel.Migrations.SqliteMigrations
                             UserId = 3,
                             RoleId = 5,
                             CreatedBy = "Admin-cr",
-                            CreatedDate = new DateTime(2024, 6, 13, 16, 26, 35, 384, DateTimeKind.Utc).AddTicks(9649),
+                            CreatedDate = new DateTime(2024, 7, 8, 16, 5, 24, 532, DateTimeKind.Utc).AddTicks(5782),
                             IPAddress = "107.23.365.369",
                             UpdatedBy = "Admin-up"
                         },
@@ -1149,7 +1158,7 @@ namespace DataModel.Migrations.SqliteMigrations
                             UserId = 4,
                             RoleId = 1,
                             CreatedBy = "Admin-cr",
-                            CreatedDate = new DateTime(2024, 6, 13, 16, 26, 35, 384, DateTimeKind.Utc).AddTicks(9651),
+                            CreatedDate = new DateTime(2024, 7, 8, 16, 5, 24, 532, DateTimeKind.Utc).AddTicks(5783),
                             IPAddress = "107.23.365.369",
                             UpdatedBy = "Admin-up"
                         });
@@ -1207,7 +1216,7 @@ namespace DataModel.Migrations.SqliteMigrations
                             ID = 1,
                             Code = "C",
                             CreatedBy = "",
-                            CreatedDate = new DateTime(2024, 6, 13, 16, 26, 35, 384, DateTimeKind.Utc).AddTicks(9582),
+                            CreatedDate = new DateTime(2024, 7, 8, 16, 5, 24, 532, DateTimeKind.Utc).AddTicks(5713),
                             Description = "Organisation or Individual who receives service.",
                             IPAddress = "",
                             Name = "Client",
@@ -1218,7 +1227,7 @@ namespace DataModel.Migrations.SqliteMigrations
                             ID = 2,
                             Code = "B",
                             CreatedBy = "",
-                            CreatedDate = new DateTime(2024, 6, 13, 16, 26, 35, 384, DateTimeKind.Utc).AddTicks(9584),
+                            CreatedDate = new DateTime(2024, 7, 8, 16, 5, 24, 532, DateTimeKind.Utc).AddTicks(5715),
                             Description = "Service provider",
                             IPAddress = "",
                             Name = "Enterprise",
