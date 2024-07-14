@@ -6,19 +6,19 @@
       "AbsoluteMoniker": "D:0:0:{82136F9D-7A7B-4BDD-81B7-3D1F19049089}|..\\Api\\Api.csproj|c:\\projects\\dev\\auctionapi\\api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{82136F9D-7A7B-4BDD-81B7-3D1F19049089}|..\\Api\\Api.csproj|c:\\projects\\dev\\auctionapi\\api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{74F93926-826A-459E-968F-A74132BD3372}|..\\Repository\\Repository.csproj|c:\\projects\\dev\\auctionapi\\repository\\repository\\authrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{74F93926-826A-459E-968F-A74132BD3372}|..\\Repository\\Repository.csproj|c:\\projects\\dev\\auctionapi\\repository\\repository\\contracts\\iauthrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{74F93926-826A-459E-968F-A74132BD3372}|..\\Repository\\Repository.csproj|c:\\projects\\dev\\auctionapi\\repository\\service\\emailservice\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{74F93926-826A-459E-968F-A74132BD3372}|..\\Repository\\Repository.csproj|c:\\projects\\dev\\auctionapi\\repository\\service\\authservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{74F93926-826A-459E-968F-A74132BD3372}|..\\Repository\\Repository.csproj|c:\\projects\\dev\\auctionapi\\repository\\service\\emailservice\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{74F93926-826A-459E-968F-A74132BD3372}|..\\Repository\\Repository.csproj|c:\\projects\\dev\\auctionapi\\repository\\repository\\authrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82136F9D-7A7B-4BDD-81B7-3D1F19049089}|..\\Api\\Api.csproj|c:\\projects\\dev\\auctionapi\\api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74F93926-826A-459E-968F-A74132BD3372}|..\\Repository\\Repository.csproj|c:\\projects\\dev\\auctionapi\\repository\\repository\\contracts\\iauthrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{82136F9D-7A7B-4BDD-81B7-3D1F19049089}|..\\Api\\Api.csproj|c:\\projects\\dev\\auctionapi\\api\\controllers\\jobpost\\organisationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -53,14 +53,14 @@
               "RelativeDocumentMoniker": "..\\Api\\appsettings.json",
               "ToolTip": "C:\\Projects\\Dev\\AuctionApi\\Api\\appsettings.json",
               "RelativeToolTip": "..\\Api\\appsettings.json",
-              "ViewState": "AQIAABIAAAAAAAAAAAAAACEAAAAwAAAA",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAACsAAAADAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2024-07-13T21:13:09.152Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "IAuthRepository.cs",
               "DocumentMoniker": "C:\\Projects\\Dev\\AuctionApi\\Repository\\Repository\\Contracts\\IAuthRepository.cs",
               "RelativeDocumentMoniker": "..\\Repository\\Repository\\Contracts\\IAuthRepository.cs",
@@ -72,7 +72,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "UserController.cs",
               "DocumentMoniker": "C:\\Projects\\Dev\\AuctionApi\\Api\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "..\\Api\\Controllers\\UserController.cs",
@@ -84,27 +84,29 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "AuthServices.cs",
               "DocumentMoniker": "C:\\Projects\\Dev\\AuctionApi\\Repository\\Service\\AuthServices.cs",
               "RelativeDocumentMoniker": "..\\Repository\\Service\\AuthServices.cs",
               "ToolTip": "C:\\Projects\\Dev\\AuctionApi\\Repository\\Service\\AuthServices.cs",
               "RelativeToolTip": "..\\Repository\\Service\\AuthServices.cs",
-              "ViewState": "AQIAAAoBAAAAAAAAAAAAAPAAAAA9AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAPAAAAA9AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-08T02:42:43.375Z"
+              "WhenOpened": "2024-07-08T02:42:43.375Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "AuthRepository.cs",
               "DocumentMoniker": "C:\\Projects\\Dev\\AuctionApi\\Repository\\Repository\\AuthRepository.cs",
               "RelativeDocumentMoniker": "..\\Repository\\Repository\\AuthRepository.cs",
               "ToolTip": "C:\\Projects\\Dev\\AuctionApi\\Repository\\Repository\\AuthRepository.cs",
               "RelativeToolTip": "..\\Repository\\Repository\\AuthRepository.cs",
-              "ViewState": "AQIAANsAAAAAAAAAAAAAAOcAAAA0AAAA",
+              "ViewState": "AQIAAFwAAAAAAAAAAAAAAOcAAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-08T01:29:32.213Z"
+              "WhenOpened": "2024-07-08T01:29:32.213Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -120,15 +122,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "EmailService.cs",
               "DocumentMoniker": "C:\\Projects\\Dev\\AuctionApi\\Repository\\Service\\EmailService\\EmailService.cs",
               "RelativeDocumentMoniker": "..\\Repository\\Service\\EmailService\\EmailService.cs",
               "ToolTip": "C:\\Projects\\Dev\\AuctionApi\\Repository\\Service\\EmailService\\EmailService.cs",
               "RelativeToolTip": "..\\Repository\\Service\\EmailService\\EmailService.cs",
-              "ViewState": "AQIAABgAAAAAAAAAAAAAAAoAAAAdAAAA",
+              "ViewState": "AQIAACgAAAAAAAAAAAAAAC8AAACCAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-06T02:16:29.423Z"
+              "WhenOpened": "2024-07-06T02:16:29.423Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
