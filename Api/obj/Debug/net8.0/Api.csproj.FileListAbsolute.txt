@@ -1042,3 +1042,23 @@ C:\Projects\Dev\AuctionApi\Api\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
 C:\Projects\Dev\AuctionApi\Api\bin\Debug\net8.0\MailKit.dll
 C:\Projects\Dev\AuctionApi\Api\bin\Debug\net8.0\MimeKit.dll
 C:\Projects\Dev\AuctionApi\Api\bin\Debug\net8.0\Resource\Static\Profile\4596335\4596335SoccerRon.jpg
+C:\Projects\Dev\AuctionApi\Api\bin\Debug\net8.0\Resource\Static\Organisation\154823265\154823265JVK.png
+C:\Projects\Dev\AuctionApi\Api\bin\Debug\net8.0\Resource\Static\Organisation\5623659833\5623659833Ramada.gif
+C:\Projects\Dev\AuctionApi\Api\bin\Debug\net8.0\Resource\Static\Organisation\13836335656\13836335656valentine_1.jpg
+C:\Projects\Dev\AuctionApi\Api\bin\Debug\net8.0\Resource\Static\Organisation\36482023483\36482023483Mantaray_-_Yasawas_Fiji_logo.jpg
+C:\Projects\Dev\AuctionApi\Api\bin\Debug\net8.0\Resource\Static\Organisation\402636266678\402636266678MOW_Samoa.jpg
+C:\Projects\Dev\AuctionApi\Api\bin\Debug\net8.0\Resource\Static\Organisation\4826906266\4826906266TOBERUA_Logo_trans_2020.png
+C:\Projects\Dev\AuctionApi\Api\bin\Debug\net8.0\Resource\Static\Organisation\5415303600\5415303600PagopagoResortLogo.png
+C:\Projects\Dev\AuctionApi\Api\bin\Debug\net8.0\Resource\Static\Organisation\5415303601\5415303601VUVALE-BDE_Logo.jpg
+C:\Projects\Dev\AuctionApi\Api\bin\Debug\net8.0\Resource\Static\Organisation.zip
+C:\Projects\Dev\AuctionApi\Api\bin\Debug\net8.0\Resource\Static\Organisation\2365989331\2365989331vodafone-1-1-300x300 - Copy.png
+C:\Projects\Dev\AuctionApi\Api\bin\Debug\net8.0\Resource\Static\Organisation\2365989331\2365989331vodafone-1-1-300x300.png
+C:\Projects\Dev\AuctionApi\Api\bin\Debug\net8.0\Resource\Static\Organisation\451326595623\451326595623PNGDrillingLogo.png
+C:\Projects\Dev\AuctionApi\Api\bin\Debug\net8.0\Resource\Static\Organisation\36365221253\36365221253InterConlogo.jpg
+C:\Projects\Dev\AuctionApi\Api\bin\Debug\net8.0\Resource\Static\Organisation\415269233\415269233VanuatuPowerAuth.png
+C:\Projects\Dev\AuctionApi\Api\bin\Debug\net8.0\Resource\Static\Organisation\5481036053\5481036053Save-the-children-logo.jpg
+C:\Projects\Dev\AuctionApi\Api\bin\Debug\net8.0\Resource\Static\Products\ID9\ProdID9190\Makoi1.jpg
+C:\Projects\Dev\AuctionApi\Api\bin\Debug\net8.0\Resource\Static\Products\ID9\ProdID9190\Makoi2.jpg
+C:\Projects\Dev\AuctionApi\Api\bin\Debug\net8.0\Resource\Static\Products\ID9\ProdID9190\Makoi3.jpg
+C:\Projects\Dev\AuctionApi\Api\bin\Debug\net8.0\Resource\Static\Products\ID9\ProdID9190\Makoi4.jpg
+C:\Projects\Dev\AuctionApi\Api\bin\Debug\net8.0\Resource\Static\Products\ID9\ProdID9190\Makoi5.jpg

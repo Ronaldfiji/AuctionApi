@@ -18,6 +18,7 @@ namespace SharedModel.AutionsDto
 
         public float? Lng { get; set; }
         public float? Lat { get; set; }
+        public string? City { get; set; }
         public string? Address { get; set; }
         [DataType(DataType.Date)]
         [DisplayFormat(DataFormatString = "{0:dd-MM-yyyy}")]

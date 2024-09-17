@@ -156,6 +156,7 @@ namespace Repository.Repository.Auction
                     Quantity = productDto.Quantity,
                     UnitPrice = productDto.UnitPrice,
                     Rating = productDto.Rating,
+                    City = productDto.City,
                     Lng = productDto.Lng,
                     Lat = productDto.Lat,
                     Address = productDto.Address,
@@ -214,6 +215,7 @@ namespace Repository.Repository.Auction
                 item.Quantity = productDto.Quantity;
                 item.Lat = productDto.Lat;
                 item.Lng = productDto.Lng;
+                item.City = productDto.City;
                 item.InspectionDate = productDto.InspectionDate;
                 item.InspectionSummary = productDto.InspectionSummary;
                 item.Address = productDto.Address;

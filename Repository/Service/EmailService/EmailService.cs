@@ -1,11 +1,11 @@
-﻿using MailKit.Net.Smtp;
-using MimeKit;
+﻿using MimeKit;
+using MailKit.Net.Smtp;
 using MimeKit.Text;
 using SharedModel.Dtos;
 using Repository.Config;
 using Microsoft.Extensions.Logging;
 using MailKit.Security;
-using Microsoft.IdentityModel.Tokens;
+
 
 namespace Repository.Service.EmailService
 {
@@ -47,10 +47,10 @@ namespace Repository.Service.EmailService
                 var smtpServerUsername = _configuration?.GetConfigurationSection("MailConfiguration").GetSection("Username").Value ?? "";
                 var smtpServerPw =  _configuration?.GetConfigurationSection("MailConfiguration").GetSection("Password").Value ?? "";
                 var smtpPort = _configuration?.GetConfigurationSection("MailConfiguration").GetSection("Port").Value ?? "";
-
+                
                 smtpClient.CheckCertificateRevocation = false;
-                smtpClient.Connect(smtpServerName, int.Parse(smtpPort), SecureSocketOptions.StartTls);
-                smtpClient.AuthenticationMechanisms.Remove("XOAUTH2");
+                smtpClient.Connect(smtpServerName, int.Parse(smtpPort), SecureSocketOptions.StartTls);             
+                //smtpClient.AuthenticationMechanisms.Remove("XOAUTH2");
                 smtpClient.Authenticate(smtpServerUsername, smtpServerPw);
                 smtpClient.Send(mimeMessage);
 

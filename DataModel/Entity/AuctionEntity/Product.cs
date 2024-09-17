@@ -19,12 +19,15 @@ namespace DataModel.Entity.AuctionEntity
 
         public float? Lng { get; set; }
         public float? Lat { get; set; }
+        [StringLength(100, ErrorMessage = "City  name should be 100 chars or less")]
+        public string? City { get; set; }
         public string? Address { get; set; }
         [DataType(DataType.Date)]
         [DisplayFormat(DataFormatString = "{0:dd-MM-yyyy}")]
         public DateTime? InspectionDate { get; set; }
         [StringLength(200, ErrorMessage = "Inspection summary should be 200 characters")]
         public string InspectionSummary { get; set; } = string.Empty;
+
 
         [DataType(DataType.Date)]
         [DisplayFormat(DataFormatString = "{0:dd-MM-yyyy}")]
