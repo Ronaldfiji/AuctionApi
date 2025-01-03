@@ -1021,7 +1021,6 @@ C:\Projects\Dev\AuctionApi\Api\obj\Debug\net8.0\Api.genruntimeconfig.cache
 C:\Projects\Dev\AuctionApi\Api\obj\Debug\net8.0\ref\Api.dll
 C:\Projects\Dev\AuctionApi\Api\obj\Debug\net8.0\Api.sourcelink.json
 C:\Projects\Dev\AuctionApi\Api\bin\Debug\net8.0\Resource\Static\Profile\8899663\8899663SoccerStart1.webp
-C:\Projects\Dev\AuctionApi\Api\bin\Debug\net8.0\Resource\Static\Profile\5589699\5589699JamesK.png
 C:\Projects\Dev\AuctionApi\Api\bin\Debug\net8.0\Resource\Static\Organisation\4693253669\4693253669RCManu-Site-Logo.svg
 C:\Projects\Dev\AuctionApi\Api\bin\Debug\net8.0\Resource\Static\Organisation\48223600258\48223600258FijiWaterLogo.png
 C:\Projects\Dev\AuctionApi\Api\bin\Debug\net8.0\Resource\Static\Organisation\5823933664\5823933664NewWorldLogo.png
@@ -1062,3 +1061,8 @@ C:\Projects\Dev\AuctionApi\Api\bin\Debug\net8.0\Resource\Static\Products\ID9\Pro
 C:\Projects\Dev\AuctionApi\Api\bin\Debug\net8.0\Resource\Static\Products\ID9\ProdID9190\Makoi3.jpg
 C:\Projects\Dev\AuctionApi\Api\bin\Debug\net8.0\Resource\Static\Products\ID9\ProdID9190\Makoi4.jpg
 C:\Projects\Dev\AuctionApi\Api\bin\Debug\net8.0\Resource\Static\Products\ID9\ProdID9190\Makoi5.jpg
+C:\Projects\Dev\AuctionApi\Api\bin\Debug\net8.0\Resource\Static\Profile\5566551\5566551Soccer1.jpeg
+C:\Projects\Dev\AuctionApi\Api\bin\Debug\net8.0\Resource\Static\Profile\6720777\6720777JuniorPlayer.jpg
+C:\Projects\Dev\AuctionApi\Api\bin\Debug\net8.0\Resource\Static\Profile\6720777\6720777Soccer1.jpeg
+C:\Projects\Dev\AuctionApi\Api\bin\Debug\net8.0\Resource\Static\Profile\6720777\6720777Soccer4.jpg
+C:\Projects\Dev\AuctionApi\Api\bin\Debug\net8.0\Resource\Static\Profile\8052256\8052256Soccer5.jpg

@@ -3,19 +3,19 @@
   "WorkspaceRootPath": "C:\\Projects\\Dev\\AuctionApi\\AuctionApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Projects\\Dev\\AuctionApi\\DataModel\\Migrations\\SqliteMigrations\\20240812234114_init-31Auh24v1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{74F93926-826A-459E-968F-A74132BD3372}|..\\Repository\\Repository.csproj|c:\\projects\\dev\\auctionapi\\repository\\repository\\auction\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{74F93926-826A-459E-968F-A74132BD3372}|..\\Repository\\Repository.csproj|c:\\projects\\dev\\auctionapi\\repository\\service\\emailservice\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{82136F9D-7A7B-4BDD-81B7-3D1F19049089}|..\\Api\\Api.csproj|c:\\projects\\dev\\auctionapi\\api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{74F93926-826A-459E-968F-A74132BD3372}|..\\Repository\\Repository.csproj|c:\\projects\\dev\\auctionapi\\repository\\repository\\authrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{74F93926-826A-459E-968F-A74132BD3372}|..\\Repository\\Repository.csproj|c:\\projects\\dev\\auctionapi\\repository\\service\\authservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74F93926-826A-459E-968F-A74132BD3372}|..\\Repository\\Repository.csproj|c:\\projects\\dev\\auctionapi\\repository\\repository\\auction\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74F93926-826A-459E-968F-A74132BD3372}|..\\Repository\\Repository.csproj|c:\\projects\\dev\\auctionapi\\repository\\service\\emailservice\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,19 +30,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "20240812234114_init-31Auh24v1.cs",
-              "DocumentMoniker": "C:\\Projects\\Dev\\AuctionApi\\DataModel\\Migrations\\SqliteMigrations\\20240812234114_init-31Auh24v1.cs",
-              "RelativeDocumentMoniker": "..\\DataModel\\Migrations\\SqliteMigrations\\20240812234114_init-31Auh24v1.cs",
-              "ToolTip": "C:\\Projects\\Dev\\AuctionApi\\DataModel\\Migrations\\SqliteMigrations\\20240812234114_init-31Auh24v1.cs",
-              "RelativeToolTip": "..\\DataModel\\Migrations\\SqliteMigrations\\20240812234114_init-31Auh24v1.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Projects\\Dev\\AuctionApi\\Api\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "..\\Api\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Projects\\Dev\\AuctionApi\\Api\\Controllers\\UserController.cs",
+              "RelativeToolTip": "..\\Api\\Controllers\\UserController.cs",
+              "ViewState": "AQIAAMQAAAAAAAAAAAAQwNAAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-12T23:41:14.522Z",
+              "WhenOpened": "2024-10-19T07:30:57.724Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "ProductRepository.cs",
               "DocumentMoniker": "C:\\Projects\\Dev\\AuctionApi\\Repository\\Repository\\Auction\\ProductRepository.cs",
               "RelativeDocumentMoniker": "..\\Repository\\Repository\\Auction\\ProductRepository.cs",
@@ -50,12 +50,11 @@
               "RelativeToolTip": "..\\Repository\\Repository\\Auction\\ProductRepository.cs",
               "ViewState": "AQIAAJ0BAAAAAAAAAAAAANkAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-12T23:16:14.494Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-12T23:16:14.494Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "EmailService.cs",
               "DocumentMoniker": "C:\\Projects\\Dev\\AuctionApi\\Repository\\Service\\EmailService\\EmailService.cs",
               "RelativeDocumentMoniker": "..\\Repository\\Service\\EmailService\\EmailService.cs",
@@ -67,25 +66,25 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "AuthRepository.cs",
               "DocumentMoniker": "C:\\Projects\\Dev\\AuctionApi\\Repository\\Repository\\AuthRepository.cs",
               "RelativeDocumentMoniker": "..\\Repository\\Repository\\AuthRepository.cs",
               "ToolTip": "C:\\Projects\\Dev\\AuctionApi\\Repository\\Repository\\AuthRepository.cs",
               "RelativeToolTip": "..\\Repository\\Repository\\AuthRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAEEAAAAAAAAAAAAQwCcAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-14T20:07:09.055Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "AuthServices.cs",
               "DocumentMoniker": "C:\\Projects\\Dev\\AuctionApi\\Repository\\Service\\AuthServices.cs",
               "RelativeDocumentMoniker": "..\\Repository\\Service\\AuthServices.cs",
               "ToolTip": "C:\\Projects\\Dev\\AuctionApi\\Repository\\Service\\AuthServices.cs",
               "RelativeToolTip": "..\\Repository\\Service\\AuthServices.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAAADIAAAA5AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-14T20:07:01.957Z"
             }

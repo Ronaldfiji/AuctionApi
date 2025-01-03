@@ -3,10 +3,6 @@ using Microsoft.AspNetCore.Mvc;
 using Repository.Contracts;
 using Repository.Service.EmailService;
 using SharedModel.Dtos;
-using System.Data;
-using System.Reflection.Metadata.Ecma335;
-using System.Text.Json;
-using System.Text.Json.Serialization;
 using System.Text.RegularExpressions;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860

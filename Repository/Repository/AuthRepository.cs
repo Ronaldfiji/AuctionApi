@@ -9,10 +9,7 @@ using Repository.Contracts;
 using Repository.Extention;
 using Repository.Service;
 using SharedModel.Dtos;
-using System.Collections.Generic;
-using System.IdentityModel.Tokens.Jwt;
-using System.Security.Claims;
-using static System.Net.WebRequestMethods;
+
 
 
 namespace Repository.Repository

@@ -48,7 +48,7 @@ namespace Repository.Service
                 Subject = new ClaimsIdentity(claims),
                 IssuedAt = DateTime.UtcNow,
                 //NotBefore = DateTime.UtcNow.AddHours(12),               
-                Expires = DateTime.UtcNow.AddSeconds(3600), // 30 mins (60s x 30m) -> 1800
+                Expires = DateTime.UtcNow.AddSeconds(1800), // 30 mins (60s x 30m) -> 1800
                 SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature),                
                 Issuer = payrollConfiguration.GetConfigurationSection("App_Settings").GetSection("Issuer").Value,
                 Audience = payrollConfiguration.GetConfigurationSection("App_Settings").GetSection("Audience").Value,
